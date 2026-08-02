@@ -1406,12 +1406,380 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
   .links a{border-color:#d1e1d8!important;background:#fbfdfc!important}
 }
 </style>
-</head>
+  <style id="international-sections-refinement">
+    /* أقسام إحصائية مبسطة: وضوح أعلى وضوضاء بصرية أقل */
+    .catalog{
+      border:1px solid #d9e2dd!important;
+      border-radius:12px!important;
+      box-shadow:none!important;
+      background:#fff!important;
+    }
+    .catalog-title{
+      padding:22px 24px!important;
+      border-bottom:1px solid #e3e9e6!important;
+      background:#fff!important;
+    }
+    .catalog-title h3{font-size:21px!important;color:#173f2e!important}
+    .catalog-actions>span{color:#66776f!important}
+    .master-detail-mode{padding:20px!important}
+    .master-detail{gap:24px!important;grid-template-columns:minmax(220px,.68fr) minmax(0,1.5fr)!important}
+    .master-nav{
+      padding:0!important;
+      border:0!important;
+      border-radius:0!important;
+      background:#fff!important;
+      box-shadow:none!important;
+      gap:2px!important;
+    }
+    .master-nav-button{
+      min-height:50px!important;
+      padding:11px 13px!important;
+      border:0!important;
+      border-bottom:1px solid #e7ece9!important;
+      border-radius:6px!important;
+      background:#fff!important;
+      box-shadow:none!important;
+      color:#40534a!important;
+      font-size:14px!important;
+    }
+    .master-nav-button span{padding-inline-start:0!important}
+    .master-nav-button span:before{display:none!important}
+    .master-nav-button b{
+      width:auto!important;height:auto!important;border-radius:0!important;
+      background:transparent!important;color:#84928b!important;
+    }
+    .master-nav-button:hover{background:#f6f8f7!important;color:#174e36!important}
+    .master-nav-button.active{
+      background:#eef6f2!important;
+      color:#0f5d3b!important;
+      box-shadow:inset -3px 0 0 #1b8354!important;
+    }
+    .master-nav-button.active b{background:transparent!important;color:#1b8354!important}
+    .master-content{
+      min-height:320px!important;
+      padding:4px 0 0!important;
+      border:0!important;
+      border-radius:0!important;
+      background:#fff!important;
+    }
+    .master-content-head{margin-bottom:12px!important;padding:0 0 14px!important}
+    .master-content-head h4{font-size:20px!important;color:#173f2e!important}
+    .master-links{gap:0 22px!important}
+    .master-links a{
+      min-height:52px!important;
+      padding:12px 2px!important;
+      border:0!important;
+      border-bottom:1px solid #e7ece9!important;
+      border-radius:0!important;
+      background:#fff!important;
+      color:#31483d!important;
+    }
+    .master-links a:hover{background:#f8faf9!important;color:#0f6b43!important}
+    @media (max-width:767px){
+      body,main{background:#f6f8f9!important}
+      .breadcrumb{
+        background:#f6f8f9!important;
+        color:#52635b!important;
+        border-bottom:0!important;
+        box-shadow:0 0 0 100vmax #f6f8f9!important;
+      }
+      .hero{
+        background:#f6f8f9!important;
+        background-image:none!important;
+        border-bottom:1px solid #e2e8e5!important;
+      }
+      .search{
+        border-color:#c9d6cf!important;
+        background:#fff!important;
+        box-shadow:0 4px 14px rgba(17,46,67,.05)!important;
+      }
+      .search-icon{color:#1b8354!important;background:#edf7f1!important}
+      .search>button[type="submit"]{
+        color:#fff!important;
+        background:#1b8354!important;
+        border-color:#1b8354!important;
+      }
+      .search-suggestions-label{
+        border-color:#d9e2dd!important;
+        background:#fff!important;
+      }
+      .search-suggestions button{
+        border-color:#d5dfda!important;
+        color:#40534a!important;
+        background:#fff!important;
+      }
+      .statistics-card,
+      .statistics-card:nth-child(1),
+      .statistics-card:nth-child(2),
+      .statistics-card:nth-child(3),
+      .statistics-card:nth-child(4){
+        border-color:#d9e3de!important;
+        border-top-color:#8fc7aa!important;
+        background:#fff!important;
+        box-shadow:0 3px 12px rgba(18,63,44,.045)!important;
+      }
+      .statistics-card.active{
+        border-color:#1b8354!important;
+        border-top-color:#1b8354!important;
+        background:linear-gradient(180deg,#f6fbf8 0,#fff 52%)!important;
+        box-shadow:0 0 0 1px #1b8354,0 10px 24px rgba(27,131,84,.10)!important;
+      }
+      .statistics-card:nth-child(1) .icon{color:#1b8354!important;background:#edf8f2!important}
+      .statistics-card:nth-child(2) .icon{color:#875f22!important;background:#f7f1e5!important}
+      .statistics-card:nth-child(3) .icon{color:#366d8d!important;background:#eaf3f8!important}
+      .statistics-card:nth-child(4) .icon{color:#604c91!important;background:#f1eef8!important}
+      .statistics-card.active .icon{color:#fff!important;background:#1b8354!important}
+      .hero{padding:16px 0 20px!important}
+      .search-suggestions{
+        margin-top:8px!important;
+        gap:6px!important;
+      }
+      .search-suggestions-label{
+        width:100%!important;
+        padding:4px 0 2px!important;
+        border:0!important;
+        border-radius:0!important;
+        background:transparent!important;
+      }
+      .search-suggestions-label strong{font-size:12px!important}
+      .search-suggestions-label small{font-size:11px!important;color:#66776f!important}
+      .search-suggestions button{
+        min-height:40px!important;
+        min-width:auto!important;
+        padding:6px 13px!important;
+        font-size:12px!important;
+      }
+      main{padding-top:24px!important}
+      .section-head{margin-bottom:13px!important}
+      .section-head h2{
+        margin-bottom:4px!important;
+        font-size:20px!important;
+        line-height:1.4!important;
+      }
+      .section-head p{font-size:12.5px!important;line-height:1.6!important}
+      .cards{gap:10px!important;margin-bottom:20px!important}
+      .statistics-card{
+        min-height:156px!important;
+        padding:15px 15px 48px!important;
+        border-top-width:3px!important;
+      }
+      .statistics-card .icon{
+        width:40px!important;
+        height:40px!important;
+        margin-bottom:9px!important;
+        border-radius:10px!important;
+      }
+      .statistics-card .icon svg{width:22px!important;height:22px!important}
+      .statistics-card h3{margin-bottom:4px!important;font-size:16px!important;line-height:1.45!important}
+      .statistics-card p{font-size:12px!important;line-height:1.6!important}
+      .statistics-card .arrow{
+        left:14px!important;
+        bottom:12px!important;
+        width:30px!important;
+        height:30px!important;
+      }
+      .card-updated{right:15px!important;bottom:14px!important;font-size:10.5px!important}
+      .catalog-title{padding:18px 16px!important}
+      .master-detail-mode{padding:0!important}
+      .groups{padding:0 16px 16px!important}
+      .catalog{
+        border-color:#d9e2dd!important;
+        background:#fff!important;
+        box-shadow:none!important;
+      }
+      .catalog-title{
+        border-bottom-color:#e3e9e6!important;
+        background:#fff!important;
+      }
+      .group{border-bottom-color:#e3e9e6!important}
+      .group-toggle{
+        border-bottom:0!important;
+        background:#fff!important;
+        color:#40534a!important;
+      }
+      .group.open .group-toggle{
+        background:#fff!important;
+        color:#0f5d3b!important;
+      }
+      .group-toggle .chev,
+      .group.open .chev{
+        width:26px!important;
+        height:26px!important;
+        border-radius:50%!important;
+        background:#eef2f0!important;
+        color:#66776f!important;
+      }
+      .group.open .chev{
+        background:#eef6f2!important;
+        color:#1b8354!important;
+      }
+      .links a{
+        border:0!important;
+        border-bottom:1px solid #e7ece9!important;
+        border-radius:0!important;
+        background:#fff!important;
+        box-shadow:none!important;
+        color:#31483d!important;
+      }
+      .links a:hover{background:#f8faf9!important;color:#0f6b43!important}
+      .toggle-all{
+        border-color:#d5ded9!important;
+        background:#fff!important;
+        color:#40534a!important;
+      }
+    }
+  </style>
+<style id="category-icons-enhancement">.category-title-with-icon{display:flex;align-items:center;gap:10px;min-width:0}.category-title-with-icon>span:last-child{min-width:0}.category-icon-svg{width:21px;height:21px;flex:0 0 21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.master-nav-button .category-icon-svg,.group-toggle .category-icon-svg{color:#1b8354}.master-nav-button.active .category-icon-svg{color:currentColor}.master-content-head .category-icon-svg{width:25px;height:25px;flex-basis:25px;color:#1b8354}@media(max-width:767px){.category-title-with-icon{gap:8px}.group-toggle .category-icon-svg{width:19px;height:19px;flex-basis:19px}}</style>
+  <style id="publication-identity-alignment">
+    /* توحيد لوحة الألوان مع صفحة النشرة */
+    :root{
+      --green:#1b8354;
+      --green-dark:#166a45;
+      --green-soft:#eaf5ef;
+      --text:#161616;
+      --muted:#6c737f;
+      --border:#d2d6db;
+      --bg:#f7f8f7;
+    }
+    body{color:var(--text);background:var(--bg)}
+    main{background:var(--bg)}
+    .hero{background:linear-gradient(180deg,#fff 0%,#f4faf7 100%)}
+    .statistics-card{
+      border-color:#e5ebe7;
+      border-top-color:#b8dfca!important;
+      background:#fff;
+      box-shadow:0 3px 12px rgba(22,22,22,.045);
+    }
+    .statistics-card:hover{
+      border-color:#b8dfca;
+      box-shadow:0 10px 24px rgba(22,22,22,.08);
+    }
+    .statistics-card .icon,
+    .statistics-card:nth-child(n) .icon{
+      color:var(--green)!important;
+      background:var(--green-soft)!important;
+      box-shadow:none!important;
+    }
+    .statistics-card.active{
+      border-color:var(--green)!important;
+      border-top-color:var(--green)!important;
+      background:linear-gradient(180deg,#f4faf7 0%,#fff 58%);
+      box-shadow:0 0 0 1px var(--green),0 10px 24px rgba(27,131,84,.10);
+    }
+    .statistics-card.active .icon,
+    .statistics-card.active .arrow{color:#fff!important;background:var(--green)!important}
+    .statistics-card .arrow{color:var(--green);background:var(--green-soft)}
+    .catalog,.overview-accordion,.access-paths,
+    .master-detail,.master-content,.group{
+      border-color:#e5ebe7!important;
+    }
+    .master-nav-button.active,.group-toggle:hover{
+      color:var(--green-dark);
+      background:var(--green-soft);
+    }
+    .master-nav-button,.group-toggle{
+      font-size:16px!important;
+      font-weight:600;
+      line-height:1.55;
+    }
+    .catalog-title h3{
+      color:#173f2e!important;
+      font-size:21px!important;
+      font-weight:700!important;
+      line-height:1.4;
+    }
+    .master-content-head .category-title-with-icon>span:last-child{
+      padding-inline-start:0!important;
+      color:#173f2e!important;
+      font-size:16px!important;
+      font-weight:700!important;
+      line-height:1.5;
+    }
+    .category-description{
+      max-width:760px;
+      margin:12px 0 0!important;
+      padding:12px 15px!important;
+      border:1px solid #d7ebdd;
+      border-inline-start:4px solid var(--green);
+      border-radius:10px;
+      color:#40584c!important;
+      background:#f4faf7;
+      font-size:14px!important;
+      font-weight:400!important;
+      line-height:1.8!important;
+    }
+    .category-heading-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .category-heading-row h4{margin:0!important}
+    .category-official-link{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      min-height:38px;
+      padding:7px 12px;
+      border:1px solid #b8dfca;
+      border-radius:9px;
+      color:var(--green-dark)!important;
+      background:#fff;
+      font-size:13px!important;
+      font-weight:700!important;
+      text-decoration:none;
+    }
+    .category-official-link:hover{border-color:var(--green);background:var(--green-soft)}
+    .category-official-link svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .mobile-group-description{
+      margin:0 0 10px;
+      padding:12px 14px;
+      border-radius:9px;
+      color:#52635b;
+      background:#f4faf7;
+      border:1px solid #d7ebdd;
+      border-inline-start:3px solid var(--green);
+      font-size:13.5px;
+      line-height:1.75;
+    }
+    .master-content-head h4{
+      font-size:20px!important;
+      line-height:1.5;
+    }
+    .master-links a,.links a{
+      font-size:15px!important;
+      line-height:1.75;
+    }
+    .master-links a:hover,.links a:hover{background:#f4faf7}
+    .identity-footer,.site-footer{
+      color:#fff;
+      background:#0f3d2e!important;
+      border-top:4px solid #54c08a;
+    }
+    .identity-footer a,.identity-footer h2,.identity-footer h3,
+    .identity-footer strong,.identity-footer .footer-bottom{color:#fff}
+    .identity-footer p,.identity-footer small{color:#d8ebe2}
+    @media(max-width:767px){
+      .statistics-card{box-shadow:0 2px 8px rgba(22,22,22,.04)}
+      .group-toggle{font-size:15px!important}
+      .links a{font-size:14px!important;line-height:1.7}
+      .category-description{padding:10px 12px!important;font-size:13.5px!important}
+      .category-heading-row{align-items:flex-start;flex-direction:column;gap:10px}
+      .category-official-link{width:100%;justify-content:center}
+    }
+  </style>
+<style id="goh-archive-mobile-styles">.goh__archive-category{display:grid;gap:4px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,.08)}.goh__archive-category:last-child{border-bottom:0}.goh__archive-category .goh__archive-parent{font-weight:700;color:#166a45}.goh__archive-category>a:not(.goh__archive-parent){padding-inline-start:14px}@media (max-width:991px){.goh__archive-group .goh__stat-group-links{max-height:55vh;overflow-y:auto;overscroll-behavior:contain}}</style><style id="historical-data-notice-styles">.historical-data-notice{margin:0 0 20px;padding:14px 18px;border-inline-start:4px solid #1b8354;border-radius:8px;background:#f2f8f5;color:#34443c;line-height:1.8;font-weight:500}.historical-data-notice[hidden]{display:none!important}@media(max-width:767px){.historical-data-notice{margin-bottom:14px;padding:12px 14px;font-size:.92rem}}</style></head>
 <body><a class="skip-link" href="#main-content">تجاوز إلى محتوى الإحصاءات</a>
-  <header class="goh" id="goh-official-nav" aria-label="شريط التنقل الرسمي للهيئة العامة للإحصاء"><div class="goh__gov"><div class="goh__gov-row"><div class="goh__gov-main"><img class="goh__flag" src="https://webserver-gastat-dev.lfr.cloud/o/resources/images/flags/ksa.png" alt="علم المملكة العربية السعودية"><span>موقع حكومي مسجل لدى هيئة الحكومة الرقمية</span><button class="goh__verify" type="button" aria-expanded="false">كيف تتحقق <span class="goh__chev">⌄</span></button></div><div class="goh__gov-side"></div></div><div class="goh__gov-panel"><div class="goh__gov-content"><div class="goh__trust"><span class="goh__trust-icon">🔗</span><div><strong>روابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa</strong><p>جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ gov.sa</p></div></div><div class="goh__trust"><span class="goh__trust-icon">🔒</span><div><strong>المواقع الحكومية الموثقة تستخدم بروتوكول HTTPS</strong><p>تحقق من أن الموقع يستخدم اتصال HTTPS الآمن.</p></div></div><div class="goh__license"><img src="https://www.stats.gov.sa/o/resources/images/icons/DGA-logo-icon.svg" alt="هيئة الحكومة الرقمية"><span>مسجل لدى هيئة الحكومة الرقمية برقم:</span><a href="https://raqmi.dga.gov.sa/platforms/platforms/4d385b0e-6cdf-4b83-ceff-08ddc9ae4042/platform-license" target="_blank" rel="noopener">20260625369</a></div></div></div></div><div class="goh__main"><a class="goh__logo" href="https://www.stats.gov.sa/ar/home" aria-label="الرئيسية"><img src="https://www.stats.gov.sa/o/resources/images/logo/logo.svg" alt="الهيئة العامة للإحصاء"></a><nav class="goh__desktop" aria-label="القائمة الرئيسية"><ul class="goh__nav"><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">الهيئة<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">الهيئة</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/gastat-about-us">من نحن</a><a href="https://www.stats.gov.sa/ar/board-of-directors">مجلس الإدارة</a><a href="https://www.stats.gov.sa/ar/organization-chart">الهيكل التنظيمي</a><a href="https://www.stats.gov.sa/ar/policies-and-strategies">السياسات والإستراتيجيات</a><a href="https://www.stats.gov.sa/ar/tenders-and-procurement">المنافسات والمشتريات</a><a href="https://www.stats.gov.sa/ar/budget-and-expenses">الميزانية والمصروفات</a><a href="https://www.stats.gov.sa/ar/annual-report">التقرير السنوي</a><a href="https://www.stats.gov.sa/ar/innovation">الابتكار الإحصائي</a><a href="https://www.stats.gov.sa/ar/laws-and-regulations">الأنظمة واللوائح</a><a href="https://www.stats.gov.sa/ar/the-second-saudi-statistics-forum">المنتدى السعودي الثاني للإحصاء</a></div></div></li><li class="goh__item goh__item--stats"><button class="goh__trigger" type="button" aria-expanded="false">الإحصاءات <span>⌄</span></button><div class="goh__dropdown goh__dropdown--statistics"><h3 class="goh__drop-title">فئات الإحصاءات</h3><div class="goh__mega goh__mega--statistics"><div class="goh__column goh__stats-column"><h4>الإحصاءات الاقتصادية</h4><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=120034" aria-haspopup="true"><span>الحسابات القومية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الحسابات القومية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=120034">إحصاءات الناتج المحلي الإجمالي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=120034">جداول العرض والاستخدام والمدخلات والمخرجات</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=2197208" aria-haspopup="true"><span>الاقتصادي الشامل</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الاقتصادي الشامل"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=2197208">إحصاءات الاقتصادي الشامل</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=122937" aria-haspopup="true"><span>الاقتصاد الرقمي</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الاقتصاد الرقمي"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=122937">إحصاءات الاقتصاد الرقمي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=122937">إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للأسر والأفراد</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=122937">إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للمنشآت</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417" aria-haspopup="true"><span>الأسعار</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الأسعار"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">إحصاءات أسعار المستهلك</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">إحصاءات أسعار الجملة</a><a role="menuitem" href="https://azghamdi.github.io/gastat-top-dropdown/">إحصاءات أسعار العقارات</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">إحصاءات متوسطات الأسعار</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">الرقم القياسي لتكاليف البناء</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">الرقم القياسي لأسعار المنتجين</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271" aria-haspopup="true"><span>الأعمال</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الأعمال"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات الأعمال الهيكلية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات المنشآت الصغيرة والمتوسطة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات البحث والتطوير</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات منظمات القطاع غير الربحي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات ديموغرافية الأعمال</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285" aria-haspopup="true"><span>الأعمال قصيرة المدى</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الأعمال قصيرة المدى"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285">مؤشر الأعمال قصيرة المدى</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285">تجارة الجملة والتجزئة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285">الرقم القياسي للإنتاج الصناعي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285">مؤشر ثقة الأعمال</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419305" aria-haspopup="true"><span>الاستثمار</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الاستثمار"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419305">إحصاءات الاستثمار الأجنبي المباشر</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=499142" aria-haspopup="true"><span>التجارة الدولية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات التجارة الدولية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=499142">التجارة الدولية للسلع</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=499142">التجارة الدولية للخدمات</a></div></div></div><div class="goh__column goh__stats-column"><h4>الإحصاءات الاجتماعية</h4><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704" aria-haspopup="true"><span>سوق العمل</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات سوق العمل"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704">إحصاءات سوق العمل</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704">إحصاءات سوق العمل السجلية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704">إحصاءات العمل التطوعي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704">الصحة والسلامة في العمل</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758" aria-haspopup="true"><span>الصحة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الصحة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">إحصاءات الحالة الصحية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">إحصاءات الرعاية الصحية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">إحصاءات المحددات الصحية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">صحة المرأة والرعاية الإنجابية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">تنمية الطفولة المبكرة ورفاهية الطفل</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">إحصاءات النشاط البدني</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">المنشآت والقوى العاملة الصحية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610" aria-haspopup="true"><span>النوع الاجتماعي والتنوع</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات النوع الاجتماعي والتنوع"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات المرأة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات النوع الاجتماعي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات الإعاقة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات كبار السن</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات الشباب</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات الأسرة السعودية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124141" aria-haspopup="true"><span>حيوية وسكانية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات حيوية وسكانية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124141">إحصاءات التقديرات السكانية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=119030" aria-haspopup="true"><span>أساليب الحياة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات أساليب الحياة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=119030">إحصاءات الثقافة والترفيه</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=119030">مؤشر الأمان</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127325" aria-haspopup="true"><span>الأحوال المعيشية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الأحوال المعيشية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127325">الدخل والإنفاق الاستهلاكي للأسرة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127325">مؤشر ثقة المستهلك</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123932" aria-haspopup="true"><span>الرياضة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الرياضة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123932">إحصاءات الرياضة</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124262" aria-haspopup="true"><span>التعليم</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات التعليم"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124262">إحصاءات التعليم والتدريب</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124262">إحصاءات المهارات والتعلم للبالغين</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380" aria-haspopup="true"><span>تعداد السعودية 2022</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات تعداد السعودية 2022"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">إحصاءات السكان</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">إحصاءات الأسر المعيشية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">السكن والمساكن</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">معلومات المناطق الإدارية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">الصحة والإعاقة</a></div></div></div><div class="goh__column goh__stats-column"><h4>الإحصاءات المكانية والبيئية</h4><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124300" aria-haspopup="true"><span>السياحة والحج والعمرة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات السياحة والحج والعمرة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124300">إحصاءات المنشآت السياحية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124300">إحصاءات العمرة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124300">إحصاءات الحج</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890" aria-haspopup="true"><span>النقل والخدمات اللوجستية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات النقل والخدمات اللوجستية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">النقل الجوي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">النقل البحري</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">النقل على الطرق</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">النقل على السكك الحديدية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">التخزين والخدمات اللوجستية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394" aria-haspopup="true"><span>البيئة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات البيئة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">إحصاءات البيئة المنزلية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">الإحصاءات البيئية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">إحصاءات التغير المناخي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">حسابات المياه</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">حسابات النفايات</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516" aria-haspopup="true"><span>الزراعة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الزراعة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">التعداد الزراعي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">إحصاءات الثروة الحيوانية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">الصيد البحري وتربية المائيات</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">الإحصاءات الزراعية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">الحيازات الزراعية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">الأمن الغذائي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">حسابات الزراعة ومصائد الأسماك</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703" aria-haspopup="true"><span>الطاقة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الطاقة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">إحصاءات البترول والغاز</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">الطاقة المتجددة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">كفاءة الطاقة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">الطاقة الكهربائية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">الطاقة المنزلية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">الثروة المعدنية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124984" aria-haspopup="true"><span>مكانية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات مكانية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124984">إحصاءات الخدمات</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124984">حسابات الأراضي</a></div></div></div><div class="goh__column goh__stats-column goh__stats-column--reports"><h4>المؤشرات والتقارير الدولية</h4><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/p-statistics"><span>المؤشرات الإحصائية</span></a></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics"><span>التقارير والإحصاءات الدولية</span></a></div></div></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">الخدمات<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">الخدمات</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/statistical-information-request">طلب معلومات إحصائية</a><a href="https://www.stats.gov.sa/ar/microdata-request">طلب البيانات الدقيقة</a><a href="https://www.stats.gov.sa/ar/business-center">مركز الأعمال (الخدمات الإحصائية)</a></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">التوعية<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">التوعية</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/survey-awareness">توعية المسوح</a><a href="https://www.stats.gov.sa/ar/statistical-knowledge-program">برنامج المعرفة الإحصائية</a><a href="https://www.stats.gov.sa/ar/story-of-number">حكاية رقم</a><a href="https://www.stats.gov.sa/ar/statistical-products">تعرف على المنتجات الإحصائية</a><a href="https://www.stats.gov.sa/ar/self-enumeration">منصة الاستيفاء الذاتي</a></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">الأدلة والتصانيف<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">الأدلة والتصانيف</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/statistical-guides">الأدلة الإحصائية</a><a href="https://www.stats.gov.sa/ar/classifications">التصانيف</a><a href="https://www.stats.gov.sa/ar/glossary">معجم المصطلحات</a><a href="https://www.stats.gov.sa/ar/editorial-policy">السياسة التحريرية ودليل كتابة الأعداد</a></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">المركز الإعلامي والفعاليات<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">المركز الإعلامي والفعاليات</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/un-world-data-forum-2026">منتدى الأمم المتحدة العالمي السادس للبيانات 2026</a><a href="https://www.stats.gov.sa/ar/data-innovation-hackathon">هكاثون الابتكار في البيانات</a><a href="https://www.stats.gov.sa/ar/news">الأخبار</a><a href="https://www.stats.gov.sa/ar/media-center">الوسائط</a><a href="https://www.stats.gov.sa/ar/transfers-platform">منصة المنقولات</a><a href="https://www.stats.gov.sa/ar/identity">هوية الهيئة</a><a href="https://www.stats.gov.sa/ar/activities-and-achievements">النشاطات والإنجازات</a></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">تواصل معنا<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">تواصل معنا</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/contact-us">تواصل معنا</a><a href="https://www.stats.gov.sa/ar/branches">الفروع</a><a href="https://www.stats.gov.sa/ar/e-participation">المشاركة الإلكترونية</a><a href="https://www.stats.gov.sa/ar/frequently-asked-questions">الأسئلة الشائعة</a><a href="https://www.stats.gov.sa/ar/careers">التوظيف</a><a href="https://www.stats.gov.sa/ar/cooperative-training">التدريب التعاوني</a></div></div></li></ul></nav><div class="goh__actions"><button class="goh__action goh__search-toggle" type="button" aria-label="فتح البحث" aria-expanded="false"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><a class="goh__action goh__action--lang" href="https://www.stats.gov.sa/en/" lang="en">English</a><a class="goh__action goh__login goh__login--icon" href="https://www.stats.gov.sa/ar/c/portal/login" aria-label="تسجيل الدخول" title="تسجيل الدخول"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5.5 20c.55-4 2.7-6 6.5-6s5.95 2 6.5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="goh__sr-only">تسجيل الدخول</span></a><button class="goh__action goh__hamb" type="button" aria-label="فتح القائمة" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></div><div class="goh__search" role="search"><div class="goh__search-head"><h3>بحث</h3><button class="goh__action goh__search-close" type="button" aria-label="إغلاق البحث">✕</button></div><form class="goh__search-form" action="https://www.stats.gov.sa/ar/search" method="get"><input class="goh__search-input" name="q" type="search" placeholder="ابحث في موقع الهيئة العامة للإحصاء" aria-label="كلمة البحث"><button class="goh__search-submit" type="submit">بحث</button></form><div class="goh__popular"><strong>الكلمات الأعلى بحثًا:</strong><a href="https://www.stats.gov.sa/ar/search?q=الناتج المحلي الإجمالي">الناتج المحلي الإجمالي</a><a href="https://www.stats.gov.sa/ar/search?q=الإنتاج الصناعي">الإنتاج الصناعي</a><a href="https://www.stats.gov.sa/ar/search?q=سوق العمل">سوق العمل</a><a href="https://www.stats.gov.sa/ar/search?q=الأسعار">الأسعار</a></div></div><div class="goh__mobile-panel"><div class="goh__mobile-item goh__mobile-item--statistics"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>الإحصاءات</span><span>⌄</span></button><div class="goh__mobile-menu goh__mobile-menu--grouped"><section class="goh__stat-group is-open"><button type="button" class="goh__stat-group-trigger" aria-expanded="true"><span>الإحصاءات الاقتصادية</span><span aria-hidden="true">⌄</span></button><div class="goh__stat-group-links"><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%82%D9%88%D9%85%D9%8A%D8%A9">الحسابات القومية</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84">الاقتصادي الشامل</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A">الاقتصاد الرقمي</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1">الأسعار</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84">الأعمال</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D9%82%D8%B5%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%89">الأعمال قصيرة المدى</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1">الاستثمار</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9">التجارة الدولية</a></div></section><section class="goh__stat-group is-open"><button type="button" class="goh__stat-group-trigger" aria-expanded="true"><span>الإحصاءات الاجتماعية</span><span aria-hidden="true">⌄</span></button><div class="goh__stat-group-links"><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%B3%D9%88%D9%82%20%D8%A7%D9%84%D8%B9%D9%85%D9%84">سوق العمل</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B5%D8%AD%D8%A9">الصحة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D9%86%D9%88%D8%B9%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%20%D9%88%D8%A7%D9%84%D8%AA%D9%86%D9%88%D8%B9">النوع الاجتماعي والتنوع</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%AD%D9%8A%D9%88%D9%8A%D8%A9%20%D9%88%D8%B3%D9%83%D8%A7%D9%86%D9%8A%D8%A9">حيوية وسكانية</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A3%D8%B3%D8%A7%D9%84%D9%8A%D8%A8%20%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9">أساليب الحياة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A3%D8%AD%D9%88%D8%A7%D9%84%20%D8%A7%D9%84%D9%85%D8%B9%D9%8A%D8%B4%D9%8A%D8%A9">الأحوال المعيشية</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9">الرياضة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85">التعليم</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%202022">تعداد السعودية 2022</a></div></section><section class="goh__stat-group is-open"><button type="button" class="goh__stat-group-trigger" aria-expanded="true"><span>الإحصاءات المكانية والبيئية</span><span aria-hidden="true">⌄</span></button><div class="goh__stat-group-links"><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9%20%D9%88%D8%A7%D9%84%D8%AD%D8%AC%20%D9%88%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A9">السياحة والحج والعمرة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D9%86%D9%82%D9%84%20%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%88%D8%AC%D8%B3%D8%AA%D9%8A%D8%A9">النقل والخدمات اللوجستية</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9">البيئة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9">الزراعة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9">الطاقة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D9%85%D9%83%D8%A7%D9%86%D9%8A%D8%A9">مكانية</a></div></section><section class="goh__stat-group is-open"><button type="button" class="goh__stat-group-trigger" aria-expanded="true"><span>المؤشرات والتقارير الدولية</span><span aria-hidden="true">⌄</span></button><div class="goh__stat-group-links"><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D9%85%D8%A4%D8%B4%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9">المؤشرات الدولية</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9">التقارير الدولية</a></div></section></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>الهيئة</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/gastat-about-us">من نحن</a><a href="https://www.stats.gov.sa/ar/board-of-directors">مجلس الإدارة</a><a href="https://www.stats.gov.sa/ar/organization-chart">الهيكل التنظيمي</a><a href="https://www.stats.gov.sa/ar/policies-and-strategies">السياسات والإستراتيجيات</a><a href="https://www.stats.gov.sa/ar/tenders-and-procurement">المنافسات والمشتريات</a><a href="https://www.stats.gov.sa/ar/budget-and-expenses">الميزانية والمصروفات</a><a href="https://www.stats.gov.sa/ar/annual-report">التقرير السنوي</a><a href="https://www.stats.gov.sa/ar/innovation">الابتكار الإحصائي</a><a href="https://www.stats.gov.sa/ar/laws-and-regulations">الأنظمة واللوائح</a><a href="https://www.stats.gov.sa/ar/the-second-saudi-statistics-forum">المنتدى السعودي الثاني للإحصاء</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>الخدمات</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/statistical-information-request">طلب معلومات إحصائية</a><a href="https://www.stats.gov.sa/ar/microdata-request">طلب البيانات الدقيقة</a><a href="https://www.stats.gov.sa/ar/business-center">مركز الأعمال (الخدمات الإحصائية)</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>التوعية</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/survey-awareness">توعية المسوح</a><a href="https://www.stats.gov.sa/ar/statistical-knowledge-program">برنامج المعرفة الإحصائية</a><a href="https://www.stats.gov.sa/ar/story-of-number">حكاية رقم</a><a href="https://www.stats.gov.sa/ar/statistical-products">تعرف على المنتجات الإحصائية</a><a href="https://www.stats.gov.sa/ar/self-enumeration">منصة الاستيفاء الذاتي</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>الأدلة والتصانيف</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/statistical-guides">الأدلة الإحصائية</a><a href="https://www.stats.gov.sa/ar/classifications">التصانيف</a><a href="https://www.stats.gov.sa/ar/glossary">معجم المصطلحات</a><a href="https://www.stats.gov.sa/ar/editorial-policy">السياسة التحريرية ودليل كتابة الأعداد</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>المركز الإعلامي والفعاليات</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/un-world-data-forum-2026">منتدى الأمم المتحدة العالمي السادس للبيانات 2026</a><a href="https://www.stats.gov.sa/ar/data-innovation-hackathon">هكاثون الابتكار في البيانات</a><a href="https://www.stats.gov.sa/ar/news">الأخبار</a><a href="https://www.stats.gov.sa/ar/media-center">الوسائط</a><a href="https://www.stats.gov.sa/ar/transfers-platform">منصة المنقولات</a><a href="https://www.stats.gov.sa/ar/identity">هوية الهيئة</a><a href="https://www.stats.gov.sa/ar/activities-and-achievements">النشاطات والإنجازات</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>تواصل معنا</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/contact-us">تواصل معنا</a><a href="https://www.stats.gov.sa/ar/branches">الفروع</a><a href="https://www.stats.gov.sa/ar/e-participation">المشاركة الإلكترونية</a><a href="https://www.stats.gov.sa/ar/frequently-asked-questions">الأسئلة الشائعة</a><a href="https://www.stats.gov.sa/ar/careers">التوظيف</a><a href="https://www.stats.gov.sa/ar/cooperative-training">التدريب التعاوني</a></div></div><a class="goh__mobile-login" href="https://www.stats.gov.sa/ar/c/portal/login">تسجيل الدخول</a></div></header>
-  <nav class="container breadcrumb" aria-label="مسار التنقل"><ol><li><a href="https://www.stats.gov.sa/ar/home">الرئيسية</a></li><li aria-current="page">الإحصاءات</li></ol></nav>
+  <header class="goh" id="goh-official-nav" aria-label="شريط التنقل الرسمي للهيئة العامة للإحصاء"><div class="goh__gov"><div class="goh__gov-row"><div class="goh__gov-main"><img class="goh__flag" src="https://webserver-gastat-dev.lfr.cloud/o/resources/images/flags/ksa.png" alt="علم المملكة العربية السعودية"><span>موقع حكومي مسجل لدى هيئة الحكومة الرقمية</span><button class="goh__verify" type="button" aria-expanded="false">كيف تتحقق <span class="goh__chev">⌄</span></button></div><div class="goh__gov-side"></div></div><div class="goh__gov-panel"><div class="goh__gov-content"><div class="goh__trust"><span class="goh__trust-icon">🔗</span><div><strong>روابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa</strong><p>جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ gov.sa</p></div></div><div class="goh__trust"><span class="goh__trust-icon">🔒</span><div><strong>المواقع الحكومية الموثقة تستخدم بروتوكول HTTPS</strong><p>تحقق من أن الموقع يستخدم اتصال HTTPS الآمن.</p></div></div><div class="goh__license"><img src="https://www.stats.gov.sa/o/resources/images/icons/DGA-logo-icon.svg" alt="هيئة الحكومة الرقمية"><span>مسجل لدى هيئة الحكومة الرقمية برقم:</span><a href="https://raqmi.dga.gov.sa/platforms/platforms/4d385b0e-6cdf-4b83-ceff-08ddc9ae4042/platform-license" target="_blank" rel="noopener">20260625369</a></div></div></div></div><div class="goh__main"><a class="goh__logo" href="https://www.stats.gov.sa/ar/home" aria-label="الرئيسية"><img src="https://www.stats.gov.sa/o/resources/images/logo/logo.svg" alt="الهيئة العامة للإحصاء"></a><nav class="goh__desktop" aria-label="القائمة الرئيسية"><ul class="goh__nav"><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">الهيئة<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">الهيئة</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/gastat-about-us">من نحن</a><a href="https://www.stats.gov.sa/ar/board-of-directors">مجلس الإدارة</a><a href="https://www.stats.gov.sa/ar/organization-chart">الهيكل التنظيمي</a><a href="https://www.stats.gov.sa/ar/policies-and-strategies">السياسات والإستراتيجيات</a><a href="https://www.stats.gov.sa/ar/tenders-and-procurement">المنافسات والمشتريات</a><a href="https://www.stats.gov.sa/ar/budget-and-expenses">الميزانية والمصروفات</a><a href="https://www.stats.gov.sa/ar/annual-report">التقرير السنوي</a><a href="https://www.stats.gov.sa/ar/innovation">الابتكار الإحصائي</a><a href="https://www.stats.gov.sa/ar/laws-and-regulations">الأنظمة واللوائح</a><a href="https://www.stats.gov.sa/ar/the-second-saudi-statistics-forum">المنتدى السعودي الثاني للإحصاء</a></div></div></li><li class="goh__item goh__item--stats"><button class="goh__trigger" type="button" aria-expanded="false">الإحصاءات <span>⌄</span></button><div class="goh__dropdown goh__dropdown--statistics"><h3 class="goh__drop-title">فئات الإحصاءات</h3><div class="goh__mega goh__mega--statistics"><div class="goh__column goh__stats-column"><h4>الإحصاءات الاقتصادية</h4><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=120034" aria-haspopup="true"><span>الحسابات القومية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الحسابات القومية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=120034">إحصاءات الناتج المحلي الإجمالي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=120034">جداول العرض والاستخدام والمدخلات والمخرجات</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=2197208" aria-haspopup="true"><span>الاقتصادي الشامل</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الاقتصادي الشامل"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=2197208">إحصاءات الاقتصادي الشامل</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=122937" aria-haspopup="true"><span>الاقتصاد الرقمي</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الاقتصاد الرقمي"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=122937">إحصاءات الاقتصاد الرقمي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=122937">إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للأسر والأفراد</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=122937">إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للمنشآت</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417" aria-haspopup="true"><span>الأسعار</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الأسعار"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">إحصاءات أسعار المستهلك</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">إحصاءات أسعار الجملة</a><a role="menuitem" href="https://azghamdi.github.io/gastat-publication/">إحصاءات أسعار العقارات</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">إحصاءات متوسطات الأسعار</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">الرقم القياسي لتكاليف البناء</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=121417">الرقم القياسي لأسعار المنتجين</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271" aria-haspopup="true"><span>الأعمال</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الأعمال"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات الأعمال الهيكلية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات المنشآت الصغيرة والمتوسطة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات البحث والتطوير</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات منظمات القطاع غير الربحي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419271">إحصاءات ديموغرافية الأعمال</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285" aria-haspopup="true"><span>الأعمال قصيرة المدى</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الأعمال قصيرة المدى"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285">مؤشر الأعمال قصيرة المدى</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285">تجارة الجملة والتجزئة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285">الرقم القياسي للإنتاج الصناعي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419285">مؤشر ثقة الأعمال</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419305" aria-haspopup="true"><span>الاستثمار</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الاستثمار"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=419305">إحصاءات الاستثمار الأجنبي المباشر</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=499142" aria-haspopup="true"><span>التجارة الدولية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات التجارة الدولية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=499142">التجارة الدولية للسلع</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119021&amp;subindex=499142">التجارة الدولية للخدمات</a></div></div></div><div class="goh__column goh__stats-column"><h4>الإحصاءات الاجتماعية</h4><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704" aria-haspopup="true"><span>سوق العمل</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات سوق العمل"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704">إحصاءات سوق العمل</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704">إحصاءات سوق العمل السجلية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704">إحصاءات العمل التطوعي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123704">الصحة والسلامة في العمل</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758" aria-haspopup="true"><span>الصحة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الصحة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">إحصاءات الحالة الصحية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">إحصاءات الرعاية الصحية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">إحصاءات المحددات الصحية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">صحة المرأة والرعاية الإنجابية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">تنمية الطفولة المبكرة ورفاهية الطفل</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">إحصاءات النشاط البدني</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123758">المنشآت والقوى العاملة الصحية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610" aria-haspopup="true"><span>النوع الاجتماعي والتنوع</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات النوع الاجتماعي والتنوع"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات المرأة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات النوع الاجتماعي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات الإعاقة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات كبار السن</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات الشباب</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123610">إحصاءات الأسرة السعودية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124141" aria-haspopup="true"><span>حيوية وسكانية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات حيوية وسكانية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124141">إحصاءات التقديرات السكانية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=119030" aria-haspopup="true"><span>أساليب الحياة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات أساليب الحياة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=119030">إحصاءات الثقافة والترفيه</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=119030">مؤشر الأمان</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127325" aria-haspopup="true"><span>الأحوال المعيشية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الأحوال المعيشية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127325">الدخل والإنفاق الاستهلاكي للأسرة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127325">مؤشر ثقة المستهلك</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123932" aria-haspopup="true"><span>الرياضة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الرياضة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=123932">إحصاءات الرياضة</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124262" aria-haspopup="true"><span>التعليم</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات التعليم"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124262">إحصاءات التعليم والتدريب</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=124262">إحصاءات المهارات والتعلم للبالغين</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380" aria-haspopup="true"><span>تعداد السعودية 2022</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات تعداد السعودية 2022"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">إحصاءات السكان</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">إحصاءات الأسر المعيشية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">السكن والمساكن</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">معلومات المناطق الإدارية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=119025&amp;subindex=127380">الصحة والإعاقة</a></div></div></div><div class="goh__column goh__stats-column"><h4>الإحصاءات البيئية والمكانية</h4><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124300" aria-haspopup="true"><span>السياحة والحج والعمرة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات السياحة والحج والعمرة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124300">إحصاءات المنشآت السياحية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124300">إحصاءات العمرة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124300">إحصاءات الحج</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890" aria-haspopup="true"><span>النقل والخدمات اللوجستية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات النقل والخدمات اللوجستية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">النقل الجوي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">النقل البحري</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">النقل على الطرق</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">النقل على السكك الحديدية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124890">التخزين والخدمات اللوجستية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394" aria-haspopup="true"><span>البيئة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات البيئة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">إحصاءات البيئة المنزلية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">الإحصاءات البيئية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">إحصاءات التغير المناخي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">حسابات المياه</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124394">حسابات النفايات</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516" aria-haspopup="true"><span>الزراعة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الزراعة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">التعداد الزراعي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">إحصاءات الثروة الحيوانية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">الصيد البحري وتربية المائيات</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">الإحصاءات الزراعية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">الحيازات الزراعية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">الأمن الغذائي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124516">حسابات الزراعة ومصائد الأسماك</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703" aria-haspopup="true"><span>الطاقة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الطاقة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">إحصاءات البترول والغاز</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">الطاقة المتجددة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">كفاءة الطاقة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">الطاقة الكهربائية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">الطاقة المنزلية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124703">الثروة المعدنية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124984" aria-haspopup="true"><span>مكانية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات مكانية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124984">إحصاءات الخدمات</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=124295&amp;subindex=124984">حسابات الأراضي</a></div></div></div><div class="goh__column goh__stats-column goh__stats-column--reports"><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550" style="color:inherit;text-decoration:none">البيانات التاريخية</a></h4><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317561" aria-haspopup="true"><span>السكانية والحيوية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات السكانية والحيوية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340079">التقديرات السكانية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340083">تعداد السكان والمساكن</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340089">إحصاءات المساكن</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=538468">إحصاءات السكان</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317553" aria-haspopup="true"><span>الإحصاءات الاجتماعية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الإحصاءات الاجتماعية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1333429">سوق العمل</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1333433">التوظف والأجور</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1333437">مسح صحة الاسرة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340041">التعليم والتدريب</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340045">دخل وإنفاق الأسرة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340049">مسح ذوي الاعاقة</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340053">إحصاءات النوع الاجتماعي</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340057">تنمية الشباب</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340062">مسح كبار السن</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340066">الزواج والطلاق</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340070">مسح العمل التطوعي</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317569" aria-haspopup="true"><span>الإستثمار الاجنبي المباشر</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الإستثمار الاجنبي المباشر"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340102">الإستثمار الاجنبي المباشر</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317565" aria-haspopup="true"><span>الصناعة التحويلية</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات الصناعة التحويلية"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340093">الصناعة التحويلية</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317557" aria-haspopup="true"><span>التنمية المستدامة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات التنمية المستدامة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340074">أهداف التنمية المستدامة</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340154" aria-haspopup="true"><span>إحصاءات الأعمال</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات إحصاءات الأعمال"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=2204353">إحصاءات نشاط التشييد والبناء</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317573" aria-haspopup="true"><span>إحصاءات الأسعار</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات إحصاءات الأسعار"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340106">إحصاءات أسعار العقارات</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=13679840" aria-haspopup="true"><span>إحصاءات الطاقة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات إحصاءات الطاقة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=13680004">إحصاءات الطاقة الكهربائية</a><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=13679847">إحصاءات الطاقة المتجددة</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317577" aria-haspopup="true"><span>إحصاءات الأعمال قصيرة المدى</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات إحصاءات الأعمال قصيرة المدى"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340112">إحصاءات الرقم القياسي للإنتاج الصناعي</a></div></div><div class="goh__tier2-item"><a class="goh__tier2-link" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317581" aria-haspopup="true"><span>إحصاءات أساليب الحياة</span><span class="goh__tier2-arrow" aria-hidden="true">‹</span></a><div class="goh__tier3-flyout" role="menu" aria-label="خيارات إحصاءات أساليب الحياة"><a role="menuitem" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340120">إحصاءات الثقافة والترفية</a></div></div></div></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">الخدمات<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">الخدمات</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/statistical-information-request">طلب معلومات إحصائية</a><a href="https://www.stats.gov.sa/ar/microdata-request">طلب البيانات الدقيقة</a><a href="https://www.stats.gov.sa/ar/business-center">مركز الأعمال (الخدمات الإحصائية)</a></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">التوعية<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">التوعية</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/survey-awareness">توعية المسوح</a><a href="https://www.stats.gov.sa/ar/statistical-knowledge-program">برنامج المعرفة الإحصائية</a><a href="https://www.stats.gov.sa/ar/story-of-number">حكاية رقم</a><a href="https://www.stats.gov.sa/ar/statistical-products">تعرف على المنتجات الإحصائية</a><a href="https://www.stats.gov.sa/ar/self-enumeration">منصة الاستيفاء الذاتي</a></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">الأدلة والتصانيف<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">الأدلة والتصانيف</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/statistical-guides">الأدلة الإحصائية</a><a href="https://www.stats.gov.sa/ar/classifications">التصانيف</a><a href="https://www.stats.gov.sa/ar/glossary">معجم المصطلحات</a><a href="https://www.stats.gov.sa/ar/editorial-policy">السياسة التحريرية ودليل كتابة الأعداد</a></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">المركز الإعلامي والفعاليات<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">المركز الإعلامي والفعاليات</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/un-world-data-forum-2026">منتدى الأمم المتحدة العالمي السادس للبيانات 2026</a><a href="https://www.stats.gov.sa/ar/data-innovation-hackathon">هكاثون الابتكار في البيانات</a><a href="https://www.stats.gov.sa/ar/news">الأخبار</a><a href="https://www.stats.gov.sa/ar/media-center">الوسائط</a><a href="https://www.stats.gov.sa/ar/transfers-platform">منصة المنقولات</a><a href="https://www.stats.gov.sa/ar/identity">هوية الهيئة</a><a href="https://www.stats.gov.sa/ar/activities-and-achievements">النشاطات والإنجازات</a></div></div></li><li class="goh__item"><button class="goh__trigger" type="button" aria-expanded="false">تواصل معنا<span>⌄</span></button><div class="goh__dropdown"><h3 class="goh__drop-title">تواصل معنا</h3><div class="goh__links goh__links--compact"><a href="https://www.stats.gov.sa/ar/contact-us">تواصل معنا</a><a href="https://www.stats.gov.sa/ar/branches">الفروع</a><a href="https://www.stats.gov.sa/ar/e-participation">المشاركة الإلكترونية</a><a href="https://www.stats.gov.sa/ar/frequently-asked-questions">الأسئلة الشائعة</a><a href="https://www.stats.gov.sa/ar/careers">التوظيف</a><a href="https://www.stats.gov.sa/ar/cooperative-training">التدريب التعاوني</a></div></div></li></ul></nav><div class="goh__actions"><button class="goh__action goh__search-toggle" type="button" aria-label="فتح البحث" aria-expanded="false"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><a class="goh__action goh__action--lang" href="https://www.stats.gov.sa/en/" lang="en">English</a><a class="goh__action goh__login goh__login--icon" href="https://www.stats.gov.sa/ar/c/portal/login" aria-label="تسجيل الدخول" title="تسجيل الدخول"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5.5 20c.55-4 2.7-6 6.5-6s5.95 2 6.5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="goh__sr-only">تسجيل الدخول</span></a><button class="goh__action goh__hamb" type="button" aria-label="فتح القائمة" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></div><div class="goh__search" role="search"><div class="goh__search-head"><h3>بحث</h3><button class="goh__action goh__search-close" type="button" aria-label="إغلاق البحث">✕</button></div><form class="goh__search-form" action="https://www.stats.gov.sa/ar/search" method="get"><input class="goh__search-input" name="q" type="search" placeholder="ابحث في موقع الهيئة العامة للإحصاء" aria-label="كلمة البحث"><button class="goh__search-submit" type="submit">بحث</button></form><div class="goh__popular"><strong>الكلمات الأعلى بحثًا:</strong><a href="https://www.stats.gov.sa/ar/search?q=الناتج المحلي الإجمالي">الناتج المحلي الإجمالي</a><a href="https://www.stats.gov.sa/ar/search?q=الإنتاج الصناعي">الإنتاج الصناعي</a><a href="https://www.stats.gov.sa/ar/search?q=سوق العمل">سوق العمل</a><a href="https://www.stats.gov.sa/ar/search?q=الأسعار">الأسعار</a></div></div><div class="goh__mobile-panel"><div class="goh__mobile-item goh__mobile-item--statistics"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>الإحصاءات</span><span>⌄</span></button><div class="goh__mobile-menu goh__mobile-menu--grouped"><section class="goh__stat-group is-open"><button type="button" class="goh__stat-group-trigger" aria-expanded="true"><span>الإحصاءات الاقتصادية</span><span aria-hidden="true">⌄</span></button><div class="goh__stat-group-links"><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%82%D9%88%D9%85%D9%8A%D8%A9">الحسابات القومية</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84">الاقتصادي الشامل</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A">الاقتصاد الرقمي</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1">الأسعار</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84">الأعمال</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D9%82%D8%B5%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%89">الأعمال قصيرة المدى</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1">الاستثمار</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9">التجارة الدولية</a></div></section><section class="goh__stat-group is-open"><button type="button" class="goh__stat-group-trigger" aria-expanded="true"><span>الإحصاءات الاجتماعية</span><span aria-hidden="true">⌄</span></button><div class="goh__stat-group-links"><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%B3%D9%88%D9%82%20%D8%A7%D9%84%D8%B9%D9%85%D9%84">سوق العمل</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B5%D8%AD%D8%A9">الصحة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D9%86%D9%88%D8%B9%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%20%D9%88%D8%A7%D9%84%D8%AA%D9%86%D9%88%D8%B9">النوع الاجتماعي والتنوع</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%AD%D9%8A%D9%88%D9%8A%D8%A9%20%D9%88%D8%B3%D9%83%D8%A7%D9%86%D9%8A%D8%A9">حيوية وسكانية</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A3%D8%B3%D8%A7%D9%84%D9%8A%D8%A8%20%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9">أساليب الحياة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A3%D8%AD%D9%88%D8%A7%D9%84%20%D8%A7%D9%84%D9%85%D8%B9%D9%8A%D8%B4%D9%8A%D8%A9">الأحوال المعيشية</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9">الرياضة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85">التعليم</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%202022">تعداد السعودية 2022</a></div></section><section class="goh__stat-group is-open"><button type="button" class="goh__stat-group-trigger" aria-expanded="true"><span>الإحصاءات البيئية والمكانية</span><span aria-hidden="true">⌄</span></button><div class="goh__stat-group-links"><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9%20%D9%88%D8%A7%D9%84%D8%AD%D8%AC%20%D9%88%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A9">السياحة والحج والعمرة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D9%86%D9%82%D9%84%20%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%88%D8%AC%D8%B3%D8%AA%D9%8A%D8%A9">النقل والخدمات اللوجستية</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9">البيئة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9">الزراعة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9">الطاقة</a><a href="https://www.stats.gov.sa/ar/statistics?category=%D9%85%D9%83%D8%A7%D9%86%D9%8A%D8%A9">مكانية</a></div></section><section class="goh__stat-group is-open goh__archive-group"><button type="button" class="goh__stat-group-trigger" aria-expanded="true"><span>البيانات التاريخية</span><span aria-hidden="true">⌄</span></button><div class="goh__stat-group-links"><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317561">السكانية والحيوية</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340079">التقديرات السكانية</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340083">تعداد السكان والمساكن</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340089">إحصاءات المساكن</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=538468">إحصاءات السكان</a></div><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317553">الإحصاءات الاجتماعية</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1333429">سوق العمل</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1333433">التوظف والأجور</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1333437">مسح صحة الاسرة</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340041">التعليم والتدريب</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340045">دخل وإنفاق الأسرة</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340049">مسح ذوي الاعاقة</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340053">إحصاءات النوع الاجتماعي</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340057">تنمية الشباب</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340062">مسح كبار السن</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340066">الزواج والطلاق</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340070">مسح العمل التطوعي</a></div><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317569">الإستثمار الاجنبي المباشر</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340102">الإستثمار الاجنبي المباشر</a></div><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317565">الصناعة التحويلية</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340093">الصناعة التحويلية</a></div><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317557">التنمية المستدامة</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340074">أهداف التنمية المستدامة</a></div><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340154">إحصاءات الأعمال</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=2204353">إحصاءات نشاط التشييد والبناء</a></div><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317573">إحصاءات الأسعار</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340106">إحصاءات أسعار العقارات</a></div><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=13679840">إحصاءات الطاقة</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=13680004">إحصاءات الطاقة الكهربائية</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=13679847">إحصاءات الطاقة المتجددة</a></div><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317577">إحصاءات الأعمال قصيرة المدى</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340112">إحصاءات الرقم القياسي للإنتاج الصناعي</a></div><div class="goh__archive-category"><a class="goh__archive-parent" href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317581">إحصاءات أساليب الحياة</a><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340120">إحصاءات الثقافة والترفية</a></div></div></section></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>الهيئة</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/gastat-about-us">من نحن</a><a href="https://www.stats.gov.sa/ar/board-of-directors">مجلس الإدارة</a><a href="https://www.stats.gov.sa/ar/organization-chart">الهيكل التنظيمي</a><a href="https://www.stats.gov.sa/ar/policies-and-strategies">السياسات والإستراتيجيات</a><a href="https://www.stats.gov.sa/ar/tenders-and-procurement">المنافسات والمشتريات</a><a href="https://www.stats.gov.sa/ar/budget-and-expenses">الميزانية والمصروفات</a><a href="https://www.stats.gov.sa/ar/annual-report">التقرير السنوي</a><a href="https://www.stats.gov.sa/ar/innovation">الابتكار الإحصائي</a><a href="https://www.stats.gov.sa/ar/laws-and-regulations">الأنظمة واللوائح</a><a href="https://www.stats.gov.sa/ar/the-second-saudi-statistics-forum">المنتدى السعودي الثاني للإحصاء</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>الخدمات</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/statistical-information-request">طلب معلومات إحصائية</a><a href="https://www.stats.gov.sa/ar/microdata-request">طلب البيانات الدقيقة</a><a href="https://www.stats.gov.sa/ar/business-center">مركز الأعمال (الخدمات الإحصائية)</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>التوعية</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/survey-awareness">توعية المسوح</a><a href="https://www.stats.gov.sa/ar/statistical-knowledge-program">برنامج المعرفة الإحصائية</a><a href="https://www.stats.gov.sa/ar/story-of-number">حكاية رقم</a><a href="https://www.stats.gov.sa/ar/statistical-products">تعرف على المنتجات الإحصائية</a><a href="https://www.stats.gov.sa/ar/self-enumeration">منصة الاستيفاء الذاتي</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>الأدلة والتصانيف</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/statistical-guides">الأدلة الإحصائية</a><a href="https://www.stats.gov.sa/ar/classifications">التصانيف</a><a href="https://www.stats.gov.sa/ar/glossary">معجم المصطلحات</a><a href="https://www.stats.gov.sa/ar/editorial-policy">السياسة التحريرية ودليل كتابة الأعداد</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>المركز الإعلامي والفعاليات</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/un-world-data-forum-2026">منتدى الأمم المتحدة العالمي السادس للبيانات 2026</a><a href="https://www.stats.gov.sa/ar/data-innovation-hackathon">هكاثون الابتكار في البيانات</a><a href="https://www.stats.gov.sa/ar/news">الأخبار</a><a href="https://www.stats.gov.sa/ar/media-center">الوسائط</a><a href="https://www.stats.gov.sa/ar/transfers-platform">منصة المنقولات</a><a href="https://www.stats.gov.sa/ar/identity">هوية الهيئة</a><a href="https://www.stats.gov.sa/ar/activities-and-achievements">النشاطات والإنجازات</a></div></div><div class="goh__mobile-item"><button type="button" class="goh__mobile-trigger" aria-expanded="false"><span>تواصل معنا</span><span>⌄</span></button><div class="goh__mobile-menu"><a href="https://www.stats.gov.sa/ar/contact-us">تواصل معنا</a><a href="https://www.stats.gov.sa/ar/branches">الفروع</a><a href="https://www.stats.gov.sa/ar/e-participation">المشاركة الإلكترونية</a><a href="https://www.stats.gov.sa/ar/frequently-asked-questions">الأسئلة الشائعة</a><a href="https://www.stats.gov.sa/ar/careers">التوظيف</a><a href="https://www.stats.gov.sa/ar/cooperative-training">التدريب التعاوني</a></div></div><a class="goh__mobile-login" href="https://www.stats.gov.sa/ar/c/portal/login">تسجيل الدخول</a></div></header>
+<nav class="container breadcrumb" aria-label="مسار التنقل"><ol><li><a href="https://www.stats.gov.sa/ar/home">الهيئة</a></li><li aria-current="page">الإحصاءات</li></ol></nav>
   <section class="hero"><div class="container"><label class="search-label" for="searchInput">ابحث في الإحصاءات</label><form class="search" id="searchForm"><span class="search-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.2 16.2 4.3 4.3"></path></svg></span><input id="searchInput" type="search" placeholder="ابحث في جميع الأقسام والروابط الإحصائية..." aria-label="البحث في الإحصاءات"><button type="submit">بحث</button></form><div class="search-suggestions" aria-label="اقتراحات جاهزة للبحث"><span class="search-suggestions-label"><strong>عمليات بحث شائعة</strong><small>اختر موضوعًا لعرض نتائجه مباشرة:</small></span><button type="button" data-query="السكان">السكان</button><button type="button" data-query="الأسعار">الأسعار</button><button type="button" data-query="سوق العمل">سوق العمل</button><button type="button" data-query="الناتج المحلي">الناتج المحلي</button><button type="button" data-query="البيئة">البيئة</button></div></div></section>
-  <main id="main-content" tabindex="-1"><h1 class="sr-only">الإحصاءات</h1><div class="container"><details class="overview-accordion" id="overview"><summary><span class="overview-summary-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M21 19H2"/></svg></span><span class="overview-summary-copy"><strong>نظرة عامة</strong><small>أهم المؤشرات وأحدث النشرات ومسارات الوصول السريع</small></span><span class="overview-summary-chevron" aria-hidden="true">⌄</span></summary><div class="overview-accordion-panel"><section class="overview-dashboard" id="overviewDashboard" aria-label="نظرة عامة على الإحصاءات">
+  <main id="main-content" tabindex="-1"><h1 class="sr-only">الإحصاءات</h1><div class="container">
+    <div class="cards" id="cards"><button type="button" class="card statistics-card active" aria-pressed="true" data-category="stat0"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3>الإحصاءات الاقتصادية</h3><p>الحسابات القومية والأسعار والأعمال والتجارة والاقتصاد الرقمي.</p><span class="card-updated"><span>آخر تحديث:</span> <time datetime="2026-07-31">31 يوليو 2026</time></span><span class="arrow" aria-hidden="true">←</span></button>
+<button type="button" class="card statistics-card" aria-pressed="false" data-category="stat1"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2M17 11a4 4 0 0 0 0-8M19 14a5 5 0 0 1 3 5v2"/></svg></span><h3>الإحصاءات الاجتماعية</h3><p>السكان وسوق العمل والتعليم والصحة وجودة الحياة.</p><span class="card-updated"><span>آخر تحديث:</span> <time datetime="2026-07-29">29 يوليو 2026</time></span><span class="arrow" aria-hidden="true">←</span></button>
+<button type="button" class="card statistics-card" aria-pressed="false" data-category="stat2"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/><path d="M12 11c3-4 7-3 8-2-1 4-4 6-8 5"/></svg></span><h3>الإحصاءات البيئية والمكانية</h3><p>البيئة والطاقة والزراعة والمكان والموارد الطبيعية.</p><span class="card-updated"><span>آخر تحديث:</span> <time datetime="2026-07-27">27 يوليو 2026</time></span><span class="arrow" aria-hidden="true">←</span></button>
+<button type="button" class="card statistics-card" aria-pressed="false" data-category="stat3"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v15H4z"/><path d="M8 3v4M16 3v4M8 11h8M8 15h5"/></svg></span><h3>البيانات التاريخية</h3><p>بيانات تاريخية تعكس المنهجيات والفترات المرجعية وقت إصدارها.</p><span class="card-updated"><span>آخر تحديث:</span> <time datetime="2026-08-02">2 أغسطس 2026</time></span><span class="arrow" aria-hidden="true">←</span></button></div>
+    <details class="overview-accordion" id="overview"><summary><span class="overview-summary-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M21 19H2"/></svg></span><span class="overview-summary-copy"><strong>نظرة عامة</strong><small>أهم المؤشرات وأحدث النشرات ومسارات الوصول السريع</small></span><span class="overview-summary-chevron" aria-hidden="true">⌄</span></summary><div class="overview-accordion-panel"><section class="overview-dashboard" id="overviewDashboard" aria-label="نظرة عامة على الإحصاءات">
               <div class="data-trust-bar" role="note">
                 <span class="data-trust-badge">بيانات رسمية</span>
                 <span>المصدر: الهيئة العامة للإحصاء</span>
@@ -1449,18 +1817,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
                   <a href="https://www.stats.gov.sa/ar/w/international-trade-in-goods-may-2026"><span class="release-category">التجارة الدولية</span><strong>التجارة الدولية في السلع لشهر مايو 2026</strong><small>نُشرت في 23 يوليو 2026</small><b>←</b></a>
                   <a href="https://www.stats.gov.sa/ar/w/construction-cost-index-for-june-2026"><span class="release-category">الأسعار</span><strong>الرقم القياسي لتكاليف البناء لشهر يونيو 2026</strong><small>نُشرت في 21 يوليو 2026</small><b>←</b></a>
                   <a href="https://www.stats.gov.sa/ar/w/real-estate-price-index-q2-2026"><span class="release-category">أسعار العقارات</span><strong>الرقم القياسي لأسعار العقارات للربع الثاني 2026</strong><small>نُشرت في 19 يوليو 2026</small><b>←</b></a>
-                  <a href="https://www.stats.gov.sa/ar/search-publication?category=publication&q=%D9%85%D8%A4%D8%B4%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D9%82%D8%B5%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%89"><span class="release-category">الأعمال</span><strong>إحصاءات مؤشرات الأعمال قصيرة المدى لشهر مايو 2026</strong><small>نُشرت في 19 يوليو 2026</small><b>←</b></a>
-                  <a href="https://www.stats.gov.sa/ar/search-publication?category=publication&q=%D8%A7%D9%84%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%B3%D9%8A%20%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D9%8A%D9%86"><span class="release-category">أسعار المنتجين</span><strong>الرقم القياسي لأسعار المنتجين لشهر مايو 2026</strong><small>نُشرت في 14 يوليو 2026</small><b>←</b></a>
-                  <a href="https://www.stats.gov.sa/ar/search-publication?category=publication&q=%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A7%D8%AA%20%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B3%D9%84%D8%B9%20%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA"><span class="release-category">متوسطات الأسعار</span><strong>متوسطات أسعار السلع والخدمات لشهر يونيو 2026</strong><small>نُشرت في 14 يوليو 2026</small><b>←</b></a>
                 </div>
               </div>
-            </section></div></details><div class="section-head"><div><h2>تصفّح حسب المجال الإحصائي</h2><p>اختر المجال لعرض أقسامه الفرعية وروابط المنتجات الإحصائية.</p></div></div>
-    <div class="cards" id="cards"><button type="button" class="card statistics-card active" aria-pressed="true" data-category="stat0"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3>الإحصاءات الاقتصادية</h3><p>الحسابات القومية والأسعار والأعمال والتجارة والاقتصاد الرقمي.</p><span class="card-updated"><span>آخر تحديث:</span> <time datetime="2026-07-31">31 يوليو 2026</time></span><span class="arrow" aria-hidden="true">←</span></button>
-<button type="button" class="card statistics-card" aria-pressed="false" data-category="stat1"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2M17 11a4 4 0 0 0 0-8M19 14a5 5 0 0 1 3 5v2"/></svg></span><h3>الإحصاءات الاجتماعية</h3><p>السكان وسوق العمل والتعليم والصحة وجودة الحياة.</p><span class="card-updated"><span>آخر تحديث:</span> <time datetime="2026-07-29">29 يوليو 2026</time></span><span class="arrow" aria-hidden="true">←</span></button>
-<button type="button" class="card statistics-card" aria-pressed="false" data-category="stat2"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/><path d="M12 11c3-4 7-3 8-2-1 4-4 6-8 5"/></svg></span><h3>الإحصاءات المكانية والبيئية</h3><p>البيئة والطاقة والزراعة والمكان والموارد الطبيعية.</p><span class="card-updated"><span>آخر تحديث:</span> <time datetime="2026-07-27">27 يوليو 2026</time></span><span class="arrow" aria-hidden="true">←</span></button>
-<button type="button" class="card statistics-card" aria-pressed="false" data-category="stat3"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 4 6 4 9s-1 6-4 9M12 3c-3 3-4 6-4 9s1 6 4 9"/></svg></span><h3>المؤشرات والتقارير الدولية</h3><p>المؤشرات الدولية والتقارير والمقارنات المرجعية.</p><span class="card-updated"><span>آخر تحديث:</span> <time datetime="2026-07-24">24 يوليو 2026</time></span><span class="arrow" aria-hidden="true">←</span></button></div>
-    <section class="catalog" aria-live="polite"><div class="catalog-title"><h3 id="catalogHeading">الإحصاءات الاقتصادية</h3><div class="catalog-actions"><span>اضغط على القسم لعرض روابطه</span><button type="button" class="toggle-all" id="toggleAll">فتح جميع الأقسام</button></div></div><div class="groups" id="groups"></div><div class="empty" id="empty">لم نجد نتيجة مطابقة. جرّب كلمة بحث أخرى.</div></section>
-  </div></main><noscript><section class="noscript-catalog" aria-labelledby="noscript-title"><div class="container"><h2 id="noscript-title">روابط الإحصاءات</h2><p>البحث التفاعلي يحتاج إلى JavaScript، ويمكنك تصفح جميع الروابط مباشرة أدناه.</p><section><h3>الإحصاءات الاقتصادية</h3><h4>الحسابات القومية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=120034">إحصاءات الناتج المحلي الإجمالي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=120034">جداول العرض والاستخدام والمدخلات والمخرجات</a></li></ul><h4>الاقتصادي الشامل</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=2197208">إحصاءات الاقتصادي الشامل</a></li></ul><h4>الاقتصاد الرقمي</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=122937">إحصاءات الاقتصاد الرقمي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=122937">إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للأسر والأفراد</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=122937">إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للمنشآت</a></li></ul><h4>الأسعار</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">إحصاءات أسعار المستهلك</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">إحصاءات أسعار الجملة</a></li><li><a href="https://azghamdi.github.io/gastat-top-dropdown/">إحصاءات أسعار العقارات</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">إحصاءات متوسطات الأسعار</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">الرقم القياسي لتكاليف البناء</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">الرقم القياسي لأسعار المنتجين</a></li></ul><h4>الأعمال</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات الأعمال الهيكلية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات المنشآت الصغيرة والمتوسطة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات البحث والتطوير</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات منظمات القطاع غير الربحي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات ديموغرافية الأعمال</a></li></ul><h4>الأعمال قصيرة المدى</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285">مؤشر الأعمال قصيرة المدى</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285">تجارة الجملة والتجزئة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285">الرقم القياسي للإنتاج الصناعي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285">مؤشر ثقة الأعمال</a></li></ul><h4>الاستثمار</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419305">إحصاءات الاستثمار الأجنبي المباشر</a></li></ul><h4>التجارة الدولية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=499142">التجارة الدولية للسلع</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=499142">التجارة الدولية للخدمات</a></li></ul></section><section><h3>الإحصاءات الاجتماعية</h3><h4>سوق العمل</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704">إحصاءات سوق العمل</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704">إحصاءات سوق العمل السجلية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704">إحصاءات العمل التطوعي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704">الصحة والسلامة في العمل</a></li></ul><h4>الصحة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">إحصاءات الحالة الصحية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">إحصاءات الرعاية الصحية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">إحصاءات المحددات الصحية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">صحة المرأة والرعاية الإنجابية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">تنمية الطفولة المبكرة ورفاهية الطفل</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">إحصاءات النشاط البدني</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">المنشآت والقوى العاملة الصحية</a></li></ul><h4>النوع الاجتماعي والتنوع</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات المرأة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات النوع الاجتماعي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات الإعاقة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات كبار السن</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات الشباب</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات الأسرة السعودية</a></li></ul><h4>حيوية وسكانية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=124141">إحصاءات التقديرات السكانية</a></li></ul><h4>أساليب الحياة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=119030">إحصاءات الثقافة والترفيه</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=119030">مؤشر الأمان</a></li></ul><h4>الأحوال المعيشية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127325">الدخل والإنفاق الاستهلاكي للأسرة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127325">مؤشر ثقة المستهلك</a></li></ul><h4>الرياضة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123932">إحصاءات الرياضة</a></li></ul><h4>التعليم</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=124262">إحصاءات التعليم والتدريب</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=124262">إحصاءات المهارات والتعلم للبالغين</a></li></ul><h4>تعداد السعودية 2022</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">إحصاءات السكان</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">إحصاءات الأسر المعيشية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">السكن والمساكن</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">معلومات المناطق الإدارية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">الصحة والإعاقة</a></li></ul></section><section><h3>الإحصاءات المكانية والبيئية</h3><h4>السياحة والحج والعمرة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124300">إحصاءات المنشآت السياحية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124300">إحصاءات العمرة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124300">إحصاءات الحج</a></li></ul><h4>النقل والخدمات اللوجستية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">النقل الجوي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">النقل البحري</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">النقل على الطرق</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">النقل على السكك الحديدية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">التخزين والخدمات اللوجستية</a></li></ul><h4>البيئة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">إحصاءات البيئة المنزلية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">الإحصاءات البيئية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">إحصاءات التغير المناخي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">حسابات المياه</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">حسابات النفايات</a></li></ul><h4>الزراعة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">التعداد الزراعي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">إحصاءات الثروة الحيوانية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">الصيد البحري وتربية المائيات</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">الإحصاءات الزراعية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">الحيازات الزراعية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">الأمن الغذائي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">حسابات الزراعة ومصائد الأسماك</a></li></ul><h4>الطاقة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">إحصاءات البترول والغاز</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">الطاقة المتجددة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">كفاءة الطاقة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">الطاقة الكهربائية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">الطاقة المنزلية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">الثروة المعدنية</a></li></ul><h4>مكانية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124984">إحصاءات الخدمات</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124984">حسابات الأراضي</a></li></ul></section><section><h3>المؤشرات والتقارير الدولية</h3><h4>المؤشرات الإحصائية</h4><ul><li><a href="https://www.stats.gov.sa/ar/p-statistics">المؤشرات الإحصائية</a></li></ul><h4>التقارير والإحصاءات الدولية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics">التقارير والإحصاءات الدولية</a></li></ul></section></div></section></noscript>
+            </section></div></details>
+    <section class="catalog" id="catalog" aria-live="polite"><div class="catalog-title"><h3 id="catalogHeading">الإحصاءات الاقتصادية</h3><div class="catalog-actions"><span>اضغط على القسم لعرض روابطه</span><button type="button" class="toggle-all" id="toggleAll">فتح جميع الأقسام</button></div></div><p class="historical-data-notice" id="historicalDataNotice" hidden>بيانات تاريخية تعكس المنهجيات والفترات المرجعية وقت إصدارها.</p><div class="groups" id="groups"></div><div class="empty" id="empty">لم نجد نتيجة مطابقة. جرّب كلمة بحث أخرى.</div></section>
+  </div></main><noscript><section class="noscript-catalog" aria-labelledby="noscript-title"><div class="container"><h2 id="noscript-title">روابط الإحصاءات</h2><p>البحث التفاعلي يحتاج إلى JavaScript، ويمكنك تصفح جميع الروابط مباشرة أدناه.</p><section><h3>الإحصاءات الاقتصادية</h3><h4>الحسابات القومية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=120034">إحصاءات الناتج المحلي الإجمالي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=120034">جداول العرض والاستخدام والمدخلات والمخرجات</a></li></ul><h4>الاقتصادي الشامل</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=2197208">إحصاءات الاقتصادي الشامل</a></li></ul><h4>الاقتصاد الرقمي</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=122937">إحصاءات الاقتصاد الرقمي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=122937">إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للأسر والأفراد</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=122937">إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للمنشآت</a></li></ul><h4>الأسعار</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">إحصاءات أسعار المستهلك</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">إحصاءات أسعار الجملة</a></li><li><a href="https://azghamdi.github.io/gastat-publication/">إحصاءات أسعار العقارات</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">إحصاءات متوسطات الأسعار</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">الرقم القياسي لتكاليف البناء</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417">الرقم القياسي لأسعار المنتجين</a></li></ul><h4>الأعمال</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات الأعمال الهيكلية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات المنشآت الصغيرة والمتوسطة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات البحث والتطوير</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات منظمات القطاع غير الربحي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271">إحصاءات ديموغرافية الأعمال</a></li></ul><h4>الأعمال قصيرة المدى</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285">مؤشر الأعمال قصيرة المدى</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285">تجارة الجملة والتجزئة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285">الرقم القياسي للإنتاج الصناعي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285">مؤشر ثقة الأعمال</a></li></ul><h4>الاستثمار</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419305">إحصاءات الاستثمار الأجنبي المباشر</a></li></ul><h4>التجارة الدولية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=499142">التجارة الدولية للسلع</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119021&subindex=499142">التجارة الدولية للخدمات</a></li></ul></section><section><h3>الإحصاءات الاجتماعية</h3><h4>سوق العمل</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704">إحصاءات سوق العمل</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704">إحصاءات سوق العمل السجلية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704">إحصاءات العمل التطوعي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704">الصحة والسلامة في العمل</a></li></ul><h4>الصحة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">إحصاءات الحالة الصحية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">إحصاءات الرعاية الصحية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">إحصاءات المحددات الصحية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">صحة المرأة والرعاية الإنجابية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">تنمية الطفولة المبكرة ورفاهية الطفل</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">إحصاءات النشاط البدني</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758">المنشآت والقوى العاملة الصحية</a></li></ul><h4>النوع الاجتماعي والتنوع</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات المرأة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات النوع الاجتماعي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات الإعاقة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات كبار السن</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات الشباب</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610">إحصاءات الأسرة السعودية</a></li></ul><h4>حيوية وسكانية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=124141">إحصاءات التقديرات السكانية</a></li></ul><h4>أساليب الحياة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=119030">إحصاءات الثقافة والترفيه</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=119030">مؤشر الأمان</a></li></ul><h4>الأحوال المعيشية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127325">الدخل والإنفاق الاستهلاكي للأسرة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127325">مؤشر ثقة المستهلك</a></li></ul><h4>الرياضة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123932">إحصاءات الرياضة</a></li></ul><h4>التعليم</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=124262">إحصاءات التعليم والتدريب</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=124262">إحصاءات المهارات والتعلم للبالغين</a></li></ul><h4>تعداد السعودية 2022</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">إحصاءات السكان</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">إحصاءات الأسر المعيشية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">السكن والمساكن</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">معلومات المناطق الإدارية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380">الصحة والإعاقة</a></li></ul></section><section><h3>الإحصاءات البيئية والمكانية</h3><h4>السياحة والحج والعمرة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124300">إحصاءات المنشآت السياحية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124300">إحصاءات العمرة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124300">إحصاءات الحج</a></li></ul><h4>النقل والخدمات اللوجستية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">النقل الجوي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">النقل البحري</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">النقل على الطرق</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">النقل على السكك الحديدية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890">التخزين والخدمات اللوجستية</a></li></ul><h4>البيئة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">إحصاءات البيئة المنزلية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">الإحصاءات البيئية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">إحصاءات التغير المناخي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">حسابات المياه</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394">حسابات النفايات</a></li></ul><h4>الزراعة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">التعداد الزراعي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">إحصاءات الثروة الحيوانية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">الصيد البحري وتربية المائيات</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">الإحصاءات الزراعية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">الحيازات الزراعية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">الأمن الغذائي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516">حسابات الزراعة ومصائد الأسماك</a></li></ul><h4>الطاقة</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">إحصاءات البترول والغاز</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">الطاقة المتجددة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">كفاءة الطاقة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">الطاقة الكهربائية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">الطاقة المنزلية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703">الثروة المعدنية</a></li></ul><h4>مكانية</h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124984">إحصاءات الخدمات</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124984">حسابات الأراضي</a></li></ul></section><section><h3>البيانات التاريخية</h3><p>بيانات تاريخية تعكس المنهجيات والفترات المرجعية وقت إصدارها.</p><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317561">السكانية والحيوية</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340079">التقديرات السكانية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340083">تعداد السكان والمساكن</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340089">إحصاءات المساكن</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=538468">إحصاءات السكان</a></li></ul><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317553">الإحصاءات الاجتماعية</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1333429">سوق العمل</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1333433">التوظف والأجور</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1333437">مسح صحة الاسرة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340041">التعليم والتدريب</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340045">دخل وإنفاق الأسرة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340049">مسح ذوي الاعاقة</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340053">إحصاءات النوع الاجتماعي</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340057">تنمية الشباب</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340062">مسح كبار السن</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340066">الزواج والطلاق</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340070">مسح العمل التطوعي</a></li></ul><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317569">الإستثمار الاجنبي المباشر</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340102">الإستثمار الاجنبي المباشر</a></li></ul><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317565">الصناعة التحويلية</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340093">الصناعة التحويلية</a></li></ul><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317557">التنمية المستدامة</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340074">أهداف التنمية المستدامة</a></li></ul><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340154">إحصاءات الأعمال</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=2204353">إحصاءات نشاط التشييد والبناء</a></li></ul><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317573">إحصاءات الأسعار</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340106">إحصاءات أسعار العقارات</a></li></ul><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=13679840">إحصاءات الطاقة</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=13680004">إحصاءات الطاقة الكهربائية</a></li><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=13679847">إحصاءات الطاقة المتجددة</a></li></ul><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317577">إحصاءات الأعمال قصيرة المدى</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340112">إحصاءات الرقم القياسي للإنتاج الصناعي</a></li></ul><h4><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1317581">إحصاءات أساليب الحياة</a></h4><ul><li><a href="https://www.stats.gov.sa/ar/statistics?index=1317550&amp;subindex=1340120">إحصاءات الثقافة والترفية</a></li></ul></section></div></section></noscript>
   <footer class="identity-footer">
 <div class="footer-grid">
 <div>
@@ -1511,11 +1872,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الحسابات القومية",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=120034",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=120038",
             "text": "إحصاءات الناتج المحلي الإجمالي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=120034",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=419265",
             "text": "جداول العرض والاستخدام والمدخلات والمخرجات"
           }
         ]
@@ -1524,7 +1885,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الاقتصادي الشامل",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=2197208",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2197212",
             "text": "إحصاءات الاقتصادي الشامل"
           }
         ]
@@ -1533,15 +1894,15 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الاقتصاد الرقمي",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=122937",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=122941",
             "text": "إحصاءات الاقتصاد الرقمي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=122937",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=122971",
             "text": "إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للأسر والأفراد"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=122937",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=127305",
             "text": "إحصاءات نفاذ واستخدام تقنية المعلومات والاتصالات للمنشآت"
           }
         ]
@@ -1550,27 +1911,27 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الأسعار",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=121421",
             "text": "إحصاءات أسعار المستهلك"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=122852",
             "text": "إحصاءات أسعار الجملة"
           },
           {
-            "href": "https://azghamdi.github.io/gastat-top-dropdown/",
+            "href": "https://azghamdi.github.io/gastat-publication/",
             "text": "إحصاءات أسعار العقارات"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=121662",
             "text": "إحصاءات متوسطات الأسعار"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=3453505",
             "text": "الرقم القياسي لتكاليف البناء"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=121417",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=10329368",
             "text": "الرقم القياسي لأسعار المنتجين"
           }
         ]
@@ -1579,23 +1940,23 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الأعمال",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123038",
             "text": "إحصاءات الأعمال الهيكلية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123088",
             "text": "إحصاءات المنشآت الصغيرة والمتوسطة"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123265",
             "text": "إحصاءات البحث والتطوير"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2163811",
             "text": "إحصاءات منظمات القطاع غير الربحي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419271",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=3631799",
             "text": "إحصاءات ديموغرافية الأعمال"
           }
         ]
@@ -1604,19 +1965,19 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الأعمال قصيرة المدى",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123342",
             "text": "مؤشر الأعمال قصيرة المدى"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123427",
             "text": "تجارة الجملة والتجزئة"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123454",
             "text": "الرقم القياسي للإنتاج الصناعي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419285",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=1340144",
             "text": "مؤشر ثقة الأعمال"
           }
         ]
@@ -1625,7 +1986,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الاستثمار",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=419305",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123583",
             "text": "إحصاءات الاستثمار الأجنبي المباشر"
           }
         ]
@@ -1634,11 +1995,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "التجارة الدولية",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=499142",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123481",
             "text": "التجارة الدولية للسلع"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119021&subindex=499142",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=1340149",
             "text": "التجارة الدولية للخدمات"
           }
         ]
@@ -1652,19 +2013,19 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "سوق العمل",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=417515",
             "text": "إحصاءات سوق العمل"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124074",
             "text": "إحصاءات سوق العمل السجلية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123992",
             "text": "إحصاءات العمل التطوعي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123704",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123762",
             "text": "الصحة والسلامة في العمل"
           }
         ]
@@ -1673,31 +2034,31 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الصحة",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=417594",
             "text": "إحصاءات الحالة الصحية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123812",
             "text": "إحصاءات الرعاية الصحية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123842",
             "text": "إحصاءات المحددات الصحية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123902",
             "text": "صحة المرأة والرعاية الإنجابية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123872",
             "text": "تنمية الطفولة المبكرة ورفاهية الطفل"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=1278616",
             "text": "إحصاءات النشاط البدني"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123758",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2968800",
             "text": "المنشآت والقوى العاملة الصحية"
           }
         ]
@@ -1706,27 +2067,27 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "النوع الاجتماعي والتنوع",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123644",
             "text": "إحصاءات المرأة"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=1340053",
             "text": "إحصاءات النوع الاجتماعي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123728",
             "text": "إحصاءات الإعاقة"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123674",
             "text": "إحصاءات كبار السن"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2696599",
             "text": "إحصاءات الشباب"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123610",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=3153652",
             "text": "إحصاءات الأسرة السعودية"
           }
         ]
@@ -1735,7 +2096,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "حيوية وسكانية",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=124141",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2366987",
             "text": "إحصاءات التقديرات السكانية"
           }
         ]
@@ -1744,11 +2105,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "أساليب الحياة",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=119030",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=1340120",
             "text": "إحصاءات الثقافة والترفيه"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=119030",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2377692",
             "text": "مؤشر الأمان"
           }
         ]
@@ -1757,11 +2118,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الأحوال المعيشية",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127325",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=127329",
             "text": "الدخل والإنفاق الاستهلاكي للأسرة"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127325",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=10132653",
             "text": "مؤشر ثقة المستهلك"
           }
         ]
@@ -1770,7 +2131,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الرياضة",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=123932",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=123936",
             "text": "إحصاءات الرياضة"
           }
         ]
@@ -1779,11 +2140,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "التعليم",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=124262",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=514986",
             "text": "إحصاءات التعليم والتدريب"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=124262",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=3030916",
             "text": "إحصاءات المهارات والتعلم للبالغين"
           }
         ]
@@ -1792,23 +2153,23 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "تعداد السعودية 2022",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=538468",
             "text": "إحصاءات السكان"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=417700",
             "text": "إحصاءات الأسر المعيشية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=417705",
             "text": "السكن والمساكن"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=494915",
             "text": "معلومات المناطق الإدارية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=417709",
             "text": "الصحة والإعاقة"
           }
         ]
@@ -1816,21 +2177,21 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
     ]
   },
   "stat2": {
-    "title": "الإحصاءات المكانية والبيئية",
+    "title": "الإحصاءات البيئية والمكانية",
     "groups": [
       [
         "السياحة والحج والعمرة",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124300",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124304",
             "text": "إحصاءات المنشآت السياحية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124300",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124334",
             "text": "إحصاءات العمرة"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124300",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124364",
             "text": "إحصاءات الحج"
           }
         ]
@@ -1839,23 +2200,23 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "النقل والخدمات اللوجستية",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124954",
             "text": "النقل الجوي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124924",
             "text": "النقل البحري"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124894",
             "text": "النقل على الطرق"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=565258",
             "text": "النقل على السكك الحديدية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124890",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2163948",
             "text": "التخزين والخدمات اللوجستية"
           }
         ]
@@ -1864,23 +2225,23 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "البيئة",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124428",
             "text": "إحصاءات البيئة المنزلية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124458",
             "text": "الإحصاءات البيئية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2236741",
             "text": "إحصاءات التغير المناخي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2236631",
             "text": "حسابات المياه"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124394",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=10269979",
             "text": "حسابات النفايات"
           }
         ]
@@ -1889,31 +2250,31 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الزراعة",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124520",
             "text": "التعداد الزراعي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124553",
             "text": "إحصاءات الثروة الحيوانية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124643",
             "text": "الصيد البحري وتربية المائيات"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124583",
             "text": "الإحصاءات الزراعية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124673",
             "text": "الحيازات الزراعية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2197199",
             "text": "الأمن الغذائي"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124516",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2236635",
             "text": "حسابات الزراعة ومصائد الأسماك"
           }
         ]
@@ -1922,27 +2283,27 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "الطاقة",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124827",
             "text": "إحصاءات البترول والغاز"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124797",
             "text": "الطاقة المتجددة"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124737",
             "text": "كفاءة الطاقة"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124767",
             "text": "الطاقة الكهربائية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124707",
             "text": "الطاقة المنزلية"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124703",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=9766296",
             "text": "الثروة المعدنية"
           }
         ]
@@ -1951,11 +2312,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
         "مكانية",
         [
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124984",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=124988",
             "text": "إحصاءات الخدمات"
           },
           {
-            "href": "https://www.stats.gov.sa/ar/statistics?index=124295&subindex=124984",
+            "href": "https://www.stats.gov.sa/ar/statistics-tabs?tab=436312&category=2215700",
             "text": "حسابات الأراضي"
           }
         ]
@@ -1963,39 +2324,198 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100%
     ]
   },
   "stat3": {
-    "title": "المؤشرات والتقارير الدولية",
-    "groups": [
+  "title": "البيانات التاريخية",
+  "groups": [
+    [
+      "السكانية والحيوية",
       [
-        "المؤشرات الإحصائية",
-        [
-          {
-            "href": "https://www.stats.gov.sa/ar/p-statistics",
-            "text": "المؤشرات الإحصائية"
-          }
-        ]
-      ],
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340079",
+          "text": "التقديرات السكانية"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340083",
+          "text": "تعداد السكان والمساكن"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340089",
+          "text": "إحصاءات المساكن"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=538468",
+          "text": "إحصاءات السكان"
+        }
+      ]
+    ],
+    [
+      "الإحصاءات الاجتماعية",
       [
-        "التقارير والإحصاءات الدولية",
-        [
-          {
-            "href": "https://www.stats.gov.sa/ar/statistics",
-            "text": "التقارير والإحصاءات الدولية"
-          }
-        ]
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1333429",
+          "text": "سوق العمل"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1333433",
+          "text": "التوظف والأجور"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1333437",
+          "text": "مسح صحة الاسرة"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340041",
+          "text": "التعليم والتدريب"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340045",
+          "text": "دخل وإنفاق الأسرة"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340049",
+          "text": "مسح ذوي الاعاقة"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340053",
+          "text": "إحصاءات النوع الاجتماعي"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340057",
+          "text": "تنمية الشباب"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340062",
+          "text": "مسح كبار السن"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340066",
+          "text": "الزواج والطلاق"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340070",
+          "text": "مسح العمل التطوعي"
+        }
+      ]
+    ],
+    [
+      "الإستثمار الاجنبي المباشر",
+      [
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340102",
+          "text": "الإستثمار الاجنبي المباشر"
+        }
+      ]
+    ],
+    [
+      "الصناعة التحويلية",
+      [
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340093",
+          "text": "الصناعة التحويلية"
+        }
+      ]
+    ],
+    [
+      "التنمية المستدامة",
+      [
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340074",
+          "text": "أهداف التنمية المستدامة"
+        }
+      ]
+    ],
+    [
+      "إحصاءات الأعمال",
+      [
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=2204353",
+          "text": "إحصاءات نشاط التشييد والبناء"
+        }
+      ]
+    ],
+    [
+      "إحصاءات الأسعار",
+      [
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340106",
+          "text": "إحصاءات أسعار العقارات"
+        }
+      ]
+    ],
+    [
+      "إحصاءات الطاقة",
+      [
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=13680004",
+          "text": "إحصاءات الطاقة الكهربائية"
+        },
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=13679847",
+          "text": "إحصاءات الطاقة المتجددة"
+        }
+      ]
+    ],
+    [
+      "إحصاءات الأعمال قصيرة المدى",
+      [
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340112",
+          "text": "إحصاءات الرقم القياسي للإنتاج الصناعي"
+        }
+      ]
+    ],
+    [
+      "إحصاءات أساليب الحياة",
+      [
+        {
+          "href": "https://www.stats.gov.sa/ar/statistics?index=1317550&subindex=1340120",
+          "text": "إحصاءات الثقافة والترفية"
+        }
       ]
     ]
-  }
-};
+  ]
+}
+};    const categoryIconPaths=title=>{const v=normalizeArabic(title);if(v.includes('رقمي'))return'<rect x="4" y="4" width="16" height="12" rx="2"/><path d="M2 20h20M9 20l1-4h4l1 4"/>';if(v.includes('اسعار'))return'<path d="M20 13l-7 7L3 10V3h7z"/><circle cx="7.5" cy="7.5" r="1"/>';if(v.includes('صحه'))return'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8zM7 12h3l1-3 2 6 1-3h3"/>';if(v.includes('نوع')||v.includes('سكان')||v.includes('حيويه')||v.includes('تعداد'))return'<circle cx="9" cy="7" r="3"/><path d="M3 20v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2M16 4a3 3 0 0 1 0 6M17 13a5 5 0 0 1 4 5v2"/>';if(v.includes('تعليم'))return'<path d="M4 4h6a2 2 0 0 1 2 2v15a3 3 0 0 0-3-3H4zM20 4h-6a2 2 0 0 0-2 2v15a3 3 0 0 1 3-3h5z"/>';if(v.includes('بييه')||v.includes('زراعه'))return'<path d="M20 4C10 4 5 9 5 16c0 2 1 4 3 5 7-1 12-6 12-17zM5 20c3-5 7-8 12-11"/>';if(v.includes('طاقه'))return'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>';if(v.includes('نقل')||v.includes('لوجستي'))return'<path d="M3 5h11v13H3zM14 10h4l3 3v5h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/>';if(v.includes('سياحه')||v.includes('حج')||v.includes('عمره'))return'<path d="M5 7l7-3 7 3v13H5zM5 10h14M9 15h6M10 20v-5h4v5"/>';if(v.includes('مكانيه'))return'<path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/>';if(v.includes('دولي'))return'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 4 6 4 9s-1 6-4 9M12 3c-3 3-4 6-4 9s1 6 4 9"/>';if(v.includes('عمل')||v.includes('استثمار'))return'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M3 12h18"/>';if(v.includes('معيشيه')||v.includes('حياه'))return'<path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/>';if(v.includes('رياضه'))return'<circle cx="12" cy="12" r="9"/><path d="M8 5l4 3 4-3M7 14h10M12 8v6"/>';if(v.includes('تجاره'))return'<path d="M3 14l9-4 9 4-3 6H6zM8 12V6h8v6M4 21c2-1 3-1 5 0s3 1 5 0 3-1 5 0"/>';if(v.includes('اعمال'))return'<path d="M4 21V5l8-3 8 3v16M2 21h20M8 9h1M15 9h1M8 14h1M15 14h1"/>';if(v.includes('قصيره'))return'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>';return'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'};
+    const categoryIcon=title=>'<svg class="category-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'+categoryIconPaths(title)+'</svg>';
+    const categoryTitleMarkup=title=>'<span class="category-title-with-icon">'+categoryIcon(title)+'<span>'+title+'</span></span>';
+    const categoryDescriptions={
+      'الحسابات القومية':'تقيس أداء الاقتصاد الوطني من خلال الناتج المحلي الإجمالي ومكونات الإنتاج والإنفاق وجداول العرض والاستخدام.',
+      'الاقتصادي الشامل':'بيانات متكاملة تقدم صورة شاملة عن هيكل الاقتصاد السعودي وتطور أنشطته الرئيسية.',
+      'الاقتصاد الرقمي':'مؤشرات استخدام التقنية والاتصالات والتحول الرقمي لدى الأفراد والأسر والمنشآت.',
+      'الأسعار':'مؤشرات ترصد تغير أسعار المستهلك والجملة والعقارات وتكاليف البناء والمنتجين.',
+      'الأعمال':'بيانات عن خصائص المنشآت وأدائها الاقتصادي والبحث والتطوير والمنشآت الصغيرة والمتوسطة.',
+      'الأعمال قصيرة المدى':'مؤشرات دورية حديثة تتابع أداء الأنشطة والمنشآت الاقتصادية خلال فترات قصيرة.',
+      'الاستثمار':'بيانات تدفقات الاستثمار وخصائص المستثمرين ومساهمتهم في الاقتصاد الوطني.',
+      'التجارة الدولية':'إحصاءات الصادرات والواردات والتبادل التجاري للمملكة مع دول العالم.',
+      'سوق العمل':'مؤشرات القوى العاملة والتوظيف والبطالة والأجور والمشاركة الاقتصادية.',
+      'الصحة':'بيانات الحالة الصحية والخدمات والرعاية الصحية وأبرز المؤشرات المرتبطة بصحة المجتمع.',
+      'النوع الاجتماعي والتنوع':'مؤشرات توضح المشاركة والفرص والخصائص الاجتماعية لمختلف فئات المجتمع.',
+      'حيوية وسكانية':'بيانات السكان والمواليد والوفيات والزواج والطلاق والتغيرات الديموغرافية.',
+      'أساليب الحياة':'مؤشرات أنماط الحياة واستخدام الوقت والسلوكيات المؤثرة في جودة حياة السكان.',
+      'الأحوال المعيشية':'بيانات الدخل والإنفاق والاستهلاك والسكن والظروف المعيشية للأسر.',
+      'الرياضة':'مؤشرات ممارسة الأنشطة الرياضية والمنشآت والمشاركة الرياضية في المجتمع.',
+      'التعليم':'بيانات الطلاب والمعلمين والمؤسسات التعليمية ومخرجات التعليم والتدريب.',
+      'تعداد السعودية 2022':'نتائج تعداد السكان والمساكن والمنشآت وخصائصها الديموغرافية والاجتماعية والاقتصادية.',
+      'السياحة والحج والعمرة':'مؤشرات الزوار والرحلات والإنفاق السياحي وخدمات الحج والعمرة.',
+      'النقل والخدمات اللوجستية':'بيانات حركة النقل والطرق والموانئ والمطارات والخدمات اللوجستية.',
+      'البيئة':'مؤشرات المناخ وجودة الهواء والمياه والنفايات والموارد والحماية البيئية.',
+      'الزراعة':'بيانات الإنتاج الزراعي والمحاصيل والثروة الحيوانية والحيازات الزراعية.',
+      'الطاقة':'مؤشرات إنتاج الطاقة واستهلاكها ومصادرها التقليدية والمتجددة.',
+      'مكانية':'بيانات جغرافية ومكانية تدعم فهم توزيع السكان والأنشطة والخدمات بين مناطق المملكة.',
+      'المؤشرات الإحصائية':'مجموعة مركزة من المؤشرات الرئيسية لقياس التطورات الاقتصادية والاجتماعية والبيئية.',
+      'التقارير والإحصاءات الدولية':'مقارنات وتقارير تضع أداء المملكة ضمن السياق الإقليمي والدولي.'
+    };
+    const categoryDescription=title=>categoryDescriptions[title]||'بيانات ومؤشرات إحصائية موثوقة تساعد على فهم هذا المجال ومتابعة تطوراته.';
+
     const cards=[...document.querySelectorAll('.card')], groups=document.getElementById('groups'), heading=document.getElementById('catalogHeading'), count=document.getElementById('count'), empty=document.getElementById('empty'), input=document.getElementById('searchInput'); let current='stat0',activeGroup=0;
     function normalizeArabic(value=''){return value.toLowerCase().normalize('NFD').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي').replace(/ؤ/g,'و').replace(/ئ/g,'ي').replace(/ة/g,'ه').replace(/ـ/g,'').replace(/[^\u0621-\u063a\u0641-\u064a0-9a-z\s]/gi,' ').replace(/\s+/g,' ').trim()}
     function escapeRegExp(value){return value.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}
     function highlightMatch(text,query=''){const terms=query.trim().split(/\s+/).filter(Boolean).sort((a,b)=>b.length-a.length);if(!terms.length)return text;try{return text.replace(new RegExp('('+terms.map(escapeRegExp).join('|')+')','gi'),'<mark>$1</mark>')}catch{return text}}
     function linkMarkup(items,query=''){return items.map(x=>`<a href="${x.href}">${highlightMatch(x.text,query)}</a>`).join('')}
     function arabicCount(n,noun='رابط'){if(n===0)return 'لا توجد نتائج';if(n===1)return noun==='نتيجة'?'نتيجة واحدة':'رابط واحد';if(n===2)return noun==='نتيجة'?'نتيجتان':'رابطان';if(n>=3&&n<=10)return n+' '+(noun==='نتيجة'?'نتائج':'روابط');return n+' '+(noun==='نتيجة'?'نتيجة':'رابطًا إحصائيًا')}
-    function render(){const cat=data[current];heading.textContent='الأقسام';groups.innerHTML='';const desktop=matchMedia('(min-width:768px)').matches;const total=cat.groups.reduce((sum,g)=>sum+g[1].length,0);toggleAll.hidden=desktop;document.querySelector('.catalog-actions>span').textContent=desktop?'اختر قسمًا لعرض روابطه':'اضغط على القسم لعرض روابطه';if(desktop){groups.className='groups master-detail-mode';const browser=document.createElement('div');browser.className='master-detail';const nav=document.createElement('div');nav.className='master-nav';nav.setAttribute('role','tablist');nav.setAttribute('aria-label','أقسام '+cat.title);const content=document.createElement('section');content.className='master-content';content.setAttribute('role','tabpanel');const show=index=>{activeGroup=index;nav.querySelectorAll('.master-nav-button').forEach((button,i)=>{button.classList.toggle('active',i===index);button.setAttribute('aria-selected',String(i===index))});const group=cat.groups[index];content.innerHTML=`<div class="master-content-head"><h4>${group[0]}</h4></div><div class="master-links">${linkMarkup(group[1])}</div>`};cat.groups.forEach((group,i)=>{const button=document.createElement('button');button.type='button';button.className='master-nav-button '+(i===activeGroup?'active':'');button.setAttribute('role','tab');button.setAttribute('aria-selected',String(i===activeGroup));button.innerHTML=`<span>${group[0]}</span><b aria-hidden="true">←</b>`;let hoverTimer;button.onclick=()=>{clearTimeout(hoverTimer);show(i)};button.onmouseenter=()=>{hoverTimer=setTimeout(()=>show(i),100)};button.onmouseleave=()=>clearTimeout(hoverTimer);nav.appendChild(button)});browser.append(nav,content);groups.appendChild(browser);show(Math.min(activeGroup,cat.groups.length-1))}else{groups.className='groups mobile-accordion-mode';cat.groups.forEach((g,i)=>{const el=document.createElement('div');el.className='group '+(i===activeGroup?'open':'');const panelId='group-'+current+'-'+i;el.innerHTML=`<button type="button" class="group-toggle" aria-expanded="${i===activeGroup}" aria-controls="${panelId}"><span>${g[0]}</span><span class="chev">⌄</span></button><div class="links" id="${panelId}">${linkMarkup(g[1])}</div>`;el.querySelector('button').onclick=()=>{const wasOpen=el.classList.contains('open');groups.querySelectorAll('.group').forEach((item,j)=>{item.classList.remove('open');item.querySelector('.group-toggle').setAttribute('aria-expanded','false')});if(!wasOpen){activeGroup=i;el.classList.add('open');el.querySelector('button').setAttribute('aria-expanded','true')}};groups.appendChild(el)})}empty.style.display=total?'none':'block';if(count)count.textContent=arabicCount(total,'رابط')}
-    function smartSearchAll(raw){const query=normalizeArabic(raw);if(!query){render();return}const terms=query.split(' ').filter(Boolean);const synonymMap={سكان:['سكاني','ديموغرافيا','تعداد'],بطاله:['سوق العمل','عاطلين'],تضخم:['اسعار','اسعار المستهلك'],ناتج:['الناتج المحلي','حسابات قوميه'],بييه:['مناخ','هواء','مياه','نفايات'],سكن:['مساكن','مسكن'],اعمال:['منشات','تجاره'],زراعه:['زراعي','محاصيل'],طاقه:['كهرباء','وقود'],صحه:['صحي','مرض']};const termGroups=terms.map(t=>[t,...(synonymMap[t]||[]).map(normalizeArabic)]);const results=[];Object.entries(data).forEach(([key,cat])=>cat.groups.forEach((g,gi)=>g[1].forEach(link=>{const product=normalizeArabic(link.text),section=normalizeArabic(g[0]),major=normalizeArabic(cat.title),haystack=product+' '+section+' '+major;if(!termGroups.every(group=>group.some(t=>haystack.includes(t))))return;let score=0;if(product===query)score+=120;if(product.startsWith(query))score+=70;if(product.includes(query))score+=45;if(section.includes(query))score+=25;if(major.includes(query))score+=15;terms.forEach(t=>{if(product.startsWith(t))score+=12;else if(product.includes(t))score+=7;else if(section.includes(t))score+=3});results.push({key,cat:cat.title,group:g[0],link,score,gi})})));results.sort((a,b)=>b.score-a.score||a.link.text.localeCompare(b.link.text,'ar'));cards.forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});groups.className='groups search-results-mode';toggleAll.hidden=false;document.querySelector('.catalog-actions>span').textContent='نتائج مجمعة حسب المجال والقسم';heading.textContent=`نتائج البحث عن «${raw.trim()}»`;groups.innerHTML='';const buckets=new Map;results.forEach(r=>{const k=r.cat+'|'+r.group;if(!buckets.has(k))buckets.set(k,{title:r.cat+' — '+r.group,items:[]});buckets.get(k).items.push(r.link)});const searchBuckets=[...buckets.values()];const desktopSearch=matchMedia('(min-width:768px)').matches;if(desktopSearch&&searchBuckets.length){groups.className='groups search-results-mode master-detail-mode';toggleAll.hidden=true;const browser=document.createElement('div');browser.className='master-detail';const nav=document.createElement('div');nav.className='master-nav';nav.setAttribute('role','tablist');nav.setAttribute('aria-label','أقسام نتائج البحث');const content=document.createElement('section');content.className='master-content';content.setAttribute('role','tabpanel');const showSearch=index=>{nav.querySelectorAll('.master-nav-button').forEach((button,i)=>{button.classList.toggle('active',i===index);button.setAttribute('aria-selected',String(i===index))});const bucket=searchBuckets[index];content.innerHTML=`<div class="master-content-head"><h4>${bucket.title}</h4></div><div class="master-links">${linkMarkup(bucket.items,raw)}</div>`};searchBuckets.forEach((bucket,i)=>{const button=document.createElement('button');button.type='button';button.className='master-nav-button '+(i===0?'active':'');button.setAttribute('role','tab');button.setAttribute('aria-selected',String(i===0));button.innerHTML=`<span>${bucket.title}</span><b aria-hidden="true">←</b>`;let hoverTimer;button.onclick=()=>{clearTimeout(hoverTimer);showSearch(i)};button.onmouseenter=()=>{hoverTimer=setTimeout(()=>showSearch(i),100)};button.onmouseleave=()=>clearTimeout(hoverTimer);nav.appendChild(button)});browser.append(nav,content);groups.appendChild(browser);showSearch(0)}else{groups.className='groups search-results-mode mobile-accordion-mode';toggleAll.hidden=!searchBuckets.length;searchBuckets.forEach((bucket,i)=>{const el=document.createElement('div');el.className='group open';const searchPanelId='search-group-'+i;el.innerHTML=`<button type="button" class="group-toggle" aria-expanded="true" aria-controls="${searchPanelId}"><span>${bucket.title}</span><span class="chev">⌄</span></button><div class="links" id="${searchPanelId}">${linkMarkup(bucket.items,raw)}</div>`;el.querySelector('button').onclick=()=>{const open=el.classList.toggle('open');el.querySelector('button').setAttribute('aria-expanded',String(open))};groups.appendChild(el)})}empty.style.display=results.length?'none':'block';empty.innerHTML=results.length?'':'<strong>لم نجد نتيجة مطابقة</strong><br>جرّب كلمة أقصر أو مصطلحًا قريبًا مثل: السكان، الأسعار، العمل أو البيئة.';if(count)count.textContent=arabicCount(results.length,'نتيجة')}
+    function render(){const cat=data[current];heading.textContent='الأقسام';const historicalNotice=document.getElementById('historicalDataNotice');if(historicalNotice)historicalNotice.hidden=current!=='stat3';groups.innerHTML='';const desktop=matchMedia('(min-width:768px)').matches;const total=cat.groups.reduce((sum,g)=>sum+g[1].length,0);toggleAll.hidden=desktop;document.querySelector('.catalog-actions>span').textContent=desktop?'اختر قسمًا لعرض روابطه':'اضغط على القسم لعرض روابطه';if(desktop){groups.className='groups master-detail-mode';const browser=document.createElement('div');browser.className='master-detail';const nav=document.createElement('div');nav.className='master-nav';nav.setAttribute('role','tablist');nav.setAttribute('aria-label','أقسام '+cat.title);const content=document.createElement('section');content.className='master-content';content.setAttribute('role','tabpanel');const show=index=>{activeGroup=index;nav.querySelectorAll('.master-nav-button').forEach((button,i)=>{button.classList.toggle('active',i===index);button.setAttribute('aria-selected',String(i===index))});const group=cat.groups[index];content.innerHTML=`<div class="master-content-head"><h4>${categoryTitleMarkup(group[0])}</h4><p class="category-description">${current==='stat3'?'بيانات تاريخية تعكس المنهجيات والفترات المرجعية وقت إصدارها.':categoryDescription(group[0])}</p></div><div class="master-links">${linkMarkup(group[1])}</div>`};cat.groups.forEach((group,i)=>{const button=document.createElement('button');button.type='button';button.className='master-nav-button '+(i===activeGroup?'active':'');button.setAttribute('role','tab');button.setAttribute('aria-selected',String(i===activeGroup));button.innerHTML=`${categoryTitleMarkup(group[0])}<b aria-hidden="true">←</b>`;let hoverTimer;button.onclick=()=>{clearTimeout(hoverTimer);show(i)};button.onmouseenter=()=>{hoverTimer=setTimeout(()=>show(i),100)};button.onmouseleave=()=>clearTimeout(hoverTimer);nav.appendChild(button)});browser.append(nav,content);groups.appendChild(browser);show(Math.min(activeGroup,cat.groups.length-1))}else{groups.className='groups mobile-accordion-mode';cat.groups.forEach((g,i)=>{const el=document.createElement('div');el.className='group '+(i===activeGroup?'open':'');const panelId='group-'+current+'-'+i;el.innerHTML=`<button type="button" class="group-toggle" aria-expanded="${i===activeGroup}" aria-controls="${panelId}">${categoryTitleMarkup(g[0])}<span class="chev">⌄</span></button><div class="links" id="${panelId}"><p class="mobile-group-description">${current==='stat3'?'بيانات تاريخية تعكس المنهجيات والفترات المرجعية وقت إصدارها.':categoryDescription(g[0])}</p>${linkMarkup(g[1])}</div>`;el.querySelector('button').onclick=()=>{const wasOpen=el.classList.contains('open');groups.querySelectorAll('.group').forEach((item,j)=>{item.classList.remove('open');item.querySelector('.group-toggle').setAttribute('aria-expanded','false')});if(!wasOpen){activeGroup=i;el.classList.add('open');el.querySelector('button').setAttribute('aria-expanded','true')}};groups.appendChild(el)})}empty.style.display=total?'none':'block';if(count)count.textContent=arabicCount(total,'رابط')}
+    function smartSearchAll(raw){const query=normalizeArabic(raw);if(!query){render();return}const terms=query.split(' ').filter(Boolean);const synonymMap={سكان:['سكاني','ديموغرافيا','تعداد'],بطاله:['سوق العمل','عاطلين'],تضخم:['اسعار','اسعار المستهلك'],ناتج:['الناتج المحلي','حسابات قوميه'],بييه:['مناخ','هواء','مياه','نفايات'],سكن:['مساكن','مسكن'],اعمال:['منشات','تجاره'],زراعه:['زراعي','محاصيل'],طاقه:['كهرباء','وقود'],صحه:['صحي','مرض']};const termGroups=terms.map(t=>[t,...(synonymMap[t]||[]).map(normalizeArabic)]);const results=[];Object.entries(data).forEach(([key,cat])=>cat.groups.forEach((g,gi)=>g[1].forEach(link=>{const product=normalizeArabic(link.text),section=normalizeArabic(g[0]),major=normalizeArabic(cat.title),haystack=product+' '+section+' '+major;if(!termGroups.every(group=>group.some(t=>haystack.includes(t))))return;let score=0;if(product===query)score+=120;if(product.startsWith(query))score+=70;if(product.includes(query))score+=45;if(section.includes(query))score+=25;if(major.includes(query))score+=15;terms.forEach(t=>{if(product.startsWith(t))score+=12;else if(product.includes(t))score+=7;else if(section.includes(t))score+=3});results.push({key,cat:cat.title,group:g[0],link,score,gi})})));results.sort((a,b)=>b.score-a.score||a.link.text.localeCompare(b.link.text,'ar'));cards.forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});groups.className='groups search-results-mode';toggleAll.hidden=false;document.querySelector('.catalog-actions>span').textContent='نتائج مجمعة حسب المجال والقسم';heading.textContent=`نتائج البحث عن «${raw.trim()}»`;groups.innerHTML='';const buckets=new Map;results.forEach(r=>{const k=r.cat+'|'+r.group;if(!buckets.has(k))buckets.set(k,{title:r.cat+' — '+r.group,items:[]});buckets.get(k).items.push(r.link)});const searchBuckets=[...buckets.values()];const desktopSearch=matchMedia('(min-width:768px)').matches;if(desktopSearch&&searchBuckets.length){groups.className='groups search-results-mode master-detail-mode';toggleAll.hidden=true;const browser=document.createElement('div');browser.className='master-detail';const nav=document.createElement('div');nav.className='master-nav';nav.setAttribute('role','tablist');nav.setAttribute('aria-label','أقسام نتائج البحث');const content=document.createElement('section');content.className='master-content';content.setAttribute('role','tabpanel');const showSearch=index=>{nav.querySelectorAll('.master-nav-button').forEach((button,i)=>{button.classList.toggle('active',i===index);button.setAttribute('aria-selected',String(i===index))});const bucket=searchBuckets[index];content.innerHTML=`<div class="master-content-head"><h4>${categoryTitleMarkup(bucket.title)}</h4></div><div class="master-links">${linkMarkup(bucket.items,raw)}</div>`};searchBuckets.forEach((bucket,i)=>{const button=document.createElement('button');button.type='button';button.className='master-nav-button '+(i===0?'active':'');button.setAttribute('role','tab');button.setAttribute('aria-selected',String(i===0));button.innerHTML=`${categoryTitleMarkup(bucket.title)}<b aria-hidden="true">←</b>`;let hoverTimer;button.onclick=()=>{clearTimeout(hoverTimer);showSearch(i)};button.onmouseenter=()=>{hoverTimer=setTimeout(()=>showSearch(i),100)};button.onmouseleave=()=>clearTimeout(hoverTimer);nav.appendChild(button)});browser.append(nav,content);groups.appendChild(browser);showSearch(0)}else{groups.className='groups search-results-mode mobile-accordion-mode';toggleAll.hidden=!searchBuckets.length;searchBuckets.forEach((bucket,i)=>{const el=document.createElement('div');el.className='group open';const searchPanelId='search-group-'+i;el.innerHTML=`<button type="button" class="group-toggle" aria-expanded="true" aria-controls="${searchPanelId}">${categoryTitleMarkup(bucket.title)}<span class="chev">⌄</span></button><div class="links" id="${searchPanelId}">${linkMarkup(bucket.items,raw)}</div>`;el.querySelector('button').onclick=()=>{const open=el.classList.toggle('open');el.querySelector('button').setAttribute('aria-expanded',String(open))};groups.appendChild(el)})}empty.style.display=results.length?'none':'block';empty.innerHTML=results.length?'':'<strong>لم نجد نتيجة مطابقة</strong><br>جرّب كلمة أقصر أو مصطلحًا قريبًا مثل: السكان، الأسعار، العمل أو البيئة.';if(count)count.textContent=arabicCount(results.length,'نتيجة')}
     cards.forEach(c=>c.onclick=()=>{cards.forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});c.classList.add('active');c.setAttribute('aria-pressed','true');current=c.dataset.category;activeGroup=0;input.value='';render();document.querySelector('.catalog').scrollIntoView({behavior:'auto',block:'start'})});
-    document.getElementById('searchForm').onsubmit=e=>{e.preventDefault();smartSearchAll(input.value);document.querySelector('.catalog').scrollIntoView({behavior:'auto',block:'start'})};let searchTimer;input.addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>smartSearchAll(input.value),180)});document.querySelectorAll('[data-query]').forEach(button=>button.addEventListener('click',()=>{input.value=button.dataset.query;smartSearchAll(input.value);document.querySelector('.catalog').scrollIntoView({behavior:'auto',block:'start'})}));document.querySelectorAll('[data-access-target]').forEach(button=>button.addEventListener('click',()=>document.getElementById(button.dataset.accessTarget)?.scrollIntoView({behavior:'auto',block:'start'})));document.querySelectorAll('[data-access-section]').forEach(button=>button.addEventListener('click',()=>{input.value=button.dataset.accessSection;smartSearchAll(input.value);document.querySelector('.catalog').scrollIntoView({behavior:'auto',block:'start'})}));document.querySelectorAll('[data-access-category]').forEach(button=>button.addEventListener('click',()=>{const map={economic:'stat0',social:'stat1',environmental:'stat2',international:'stat3'},card=cards.find(x=>x.dataset.category===map[button.dataset.accessCategory]);card?.click()}));const toggleAll=document.getElementById('toggleAll');toggleAll.onclick=()=>{const list=[...groups.querySelectorAll('.group')],shouldOpen=list.some(x=>!x.classList.contains('open'));list.forEach(x=>{x.classList.toggle('open',shouldOpen);x.querySelector('.group-toggle')?.setAttribute('aria-expanded',String(shouldOpen))});toggleAll.textContent=shouldOpen?'طي جميع الأقسام':'فتح جميع الأقسام'};const overviewByHash=document.getElementById('overview');if(location.hash==='#overview'&&overviewByHash){overviewByHash.open=true;setTimeout(()=>overviewByHash.scrollIntoView({behavior:'auto',block:'start'}),0)};let lastDesktopMode=matchMedia('(min-width:768px)').matches;addEventListener('resize',()=>{const now=matchMedia('(min-width:768px)').matches;if(now!==lastDesktopMode){lastDesktopMode=now;input.value?smartSearchAll(input.value):render()}},{passive:true});const initialSection=new URLSearchParams(location.search).get('section');if(initialSection){input.value=initialSection;smartSearchAll(initialSection)}else render();
+    document.getElementById('searchForm').onsubmit=e=>{e.preventDefault();smartSearchAll(input.value);document.querySelector('.catalog').scrollIntoView({behavior:'auto',block:'start'})};let searchTimer;input.addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>smartSearchAll(input.value),180)});document.querySelectorAll('[data-query]').forEach(button=>button.addEventListener('click',()=>{input.value=button.dataset.query;smartSearchAll(input.value);document.querySelector('.catalog').scrollIntoView({behavior:'auto',block:'start'})}));document.querySelectorAll('[data-access-target]').forEach(button=>button.addEventListener('click',()=>document.getElementById(button.dataset.accessTarget)?.scrollIntoView({behavior:'auto',block:'start'})));document.querySelectorAll('[data-access-section]').forEach(button=>button.addEventListener('click',()=>{input.value=button.dataset.accessSection;smartSearchAll(input.value);document.querySelector('.catalog').scrollIntoView({behavior:'auto',block:'start'})}));document.querySelectorAll('[data-access-category]').forEach(button=>button.addEventListener('click',()=>{const map={economic:'stat0',social:'stat1',environmental:'stat2',international:'stat3'},card=cards.find(x=>x.dataset.category===map[button.dataset.accessCategory]);card?.click()}));const toggleAll=document.getElementById('toggleAll');toggleAll.onclick=()=>{const list=[...groups.querySelectorAll('.group')],shouldOpen=list.some(x=>!x.classList.contains('open'));list.forEach(x=>{x.classList.toggle('open',shouldOpen);x.querySelector('.group-toggle')?.setAttribute('aria-expanded',String(shouldOpen))});toggleAll.textContent=shouldOpen?'طي جميع الأقسام':'فتح جميع الأقسام'};const overviewByHash=document.getElementById('overview');if(location.hash==='#overview'&&overviewByHash){overviewByHash.open=true;setTimeout(()=>overviewByHash.scrollIntoView({behavior:'auto',block:'start'}),0)};let lastDesktopMode=matchMedia('(min-width:768px)').matches;addEventListener('resize',()=>{const now=matchMedia('(min-width:768px)').matches;if(now!==lastDesktopMode){lastDesktopMode=now;input.value?smartSearchAll(input.value):render()}},{passive:true});const initialParams=new URLSearchParams(location.search);const initialView=initialParams.get('view');const initialGroup=Number.parseInt(initialParams.get('group')||'0',10);const initialSection=initialParams.get('section');if(initialView&&data[initialView]){current=initialView;activeGroup=Number.isInteger(initialGroup)&&initialGroup>=0&&initialGroup<data[current].groups.length?initialGroup:0;cards.forEach(card=>{const active=card.dataset.category===current;card.classList.toggle('active',active);card.setAttribute('aria-pressed',String(active))});render();requestAnimationFrame(()=>document.getElementById('catalog')?.scrollIntoView({behavior:'auto',block:'start'}))}else if(initialSection){input.value=initialSection;smartSearchAll(initialSection)}else render();
   </script>
 <script id="identity-header-behavior">(()=>{const h=document.querySelector('.goh');if(!h)return;const desktopItems=[...h.querySelectorAll('.goh__desktop .goh__item')];const closeDesktop=()=>desktopItems.forEach(i=>{i.classList.remove('is-open');i.querySelector(':scope > .goh__trigger')?.setAttribute('aria-expanded','false')});const verify=h.querySelector('.goh__verify'),govPanel=h.querySelector('.goh__gov-panel');verify?.addEventListener('click',()=>{const open=verify.getAttribute('aria-expanded')!=='true';verify.setAttribute('aria-expanded',String(open));govPanel?.classList.toggle('is-open',open)});h.querySelectorAll('.goh__desktop .goh__trigger').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();const item=b.closest('.goh__item'),open=item.classList.contains('is-open');closeDesktop();if(!open){item.classList.add('is-open');b.setAttribute('aria-expanded','true')}}));const search=h.querySelector('.goh__search'),searchToggle=h.querySelector('.goh__search-toggle'),searchClose=h.querySelector('.goh__search-close');const setSearch=open=>{search?.classList.toggle('is-open',open);searchToggle?.setAttribute('aria-expanded',String(open));if(open)setTimeout(()=>h.querySelector('.goh__search-input')?.focus(),0)};searchToggle?.addEventListener('click',()=>setSearch(!search?.classList.contains('is-open')));searchClose?.addEventListener('click',()=>{setSearch(false);searchToggle?.focus()});const mobile=h.querySelector('.goh__mobile-panel'),hamb=h.querySelector('.goh__hamb');const setMobile=open=>{mobile?.classList.toggle('is-open',open);hamb?.setAttribute('aria-expanded',String(open));hamb?.setAttribute('aria-label',open?'إغلاق القائمة':'فتح القائمة');document.body.classList.toggle('mobile-nav-open',open)};hamb?.addEventListener('click',()=>setMobile(!mobile?.classList.contains('is-open')));h.querySelectorAll('.goh__mobile-trigger').forEach(b=>b.addEventListener('click',()=>{const item=b.closest('.goh__mobile-item'),open=!item.classList.contains('is-open');item.classList.toggle('is-open',open);b.setAttribute('aria-expanded',String(open))}));h.querySelectorAll('.goh__stat-group-trigger').forEach(b=>b.addEventListener('click',()=>{const group=b.closest('.goh__stat-group'),open=!group.classList.contains('is-open');group.classList.toggle('is-open',open);b.setAttribute('aria-expanded',String(open))}));document.addEventListener('click',e=>{if(!h.contains(e.target))closeDesktop()});document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeDesktop();setSearch(false);setMobile(false)}})})();</script>
 <div class="floating-tools" aria-label="أدوات الصفحة"><div class="accessibility-wrap"><button class="floating-tool accessibility-toggle" id="accessibilityToggle" type="button" aria-label="فتح أدوات إمكانية الوصول" aria-expanded="false" aria-controls="accessibilityPanel"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="M4 8h16M12 8v13M8 21l4-7 4 7M7 8l1 6M17 8l-1 6"/></svg></button><div class="accessibility-panel" id="accessibilityPanel" hidden><strong>إمكانية الوصول</strong><button type="button" id="fontIncrease">تكبير النص <span>＋</span></button><button type="button" id="fontDecrease">تصغير النص <span>−</span></button><button type="button" id="contrastToggle">تباين عالٍ <span>◐</span></button><button type="button" id="accessibilityReset">إعادة الضبط <span>↺</span></button></div></div><button class="floating-tool back-to-top" id="backToTop" type="button" aria-label="العودة إلى أعلى الصفحة" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 15 7-7 7 7"/></svg></button></div>
