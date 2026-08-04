@@ -11945,4 +11945,53 @@ input.addEventListener('focus',expand);panel.addEventListener('pointerdown',expa
 <script id="goh-statistics-copy-nav-font">
 (()=>{const sync=()=>{const target=document.querySelector("#goh-official-nav .goh__item--statistics-sections>.goh__trigger");const peers=[...document.querySelectorAll("#goh-official-nav .goh__desktop .goh__trigger")];const source=peers.find(el=>el!==target&&el.textContent.includes("الخدمات"))||peers.find(el=>el!==target);if(!target||!source)return;const cs=getComputedStyle(source);["font-family","font-size","font-weight","font-style","line-height","letter-spacing"].forEach(prop=>target.style.setProperty(prop,cs.getPropertyValue(prop),"important"));};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",sync):sync();window.addEventListener("load",sync);})();
 </script>
+<style id="kpi-product-links-style">
+.kpi .kpi-product-footer{order:99;display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;box-sizing:border-box;margin-top:auto;padding-top:14px;border-top:1px solid #dce9e2;direction:rtl}
+.kpi .kpi-product-footer .gastat-kpi-release-dates{flex:1 1 auto;margin:0!important;padding:0!important;border:0!important;order:0!important}
+.kpi .kpi-product-link{display:inline-flex;align-items:center;justify-content:center;gap:12px;flex:0 0 auto;box-sizing:border-box;margin:0;padding:10px 16px;border:1px solid #ccd6d1;border-radius:10px;background:#fff;color:#172b24;text-decoration:none;font-size:.9rem;font-weight:600;line-height:1.4;box-shadow:none;transition:color .18s ease,border-color .18s ease,background-color .18s ease;direction:rtl}
+.kpi .kpi-product-link:hover,.kpi .kpi-product-link:focus-visible{color:#123f2c;border-color:#148357;background:#f4faf7}
+.kpi .kpi-product-link svg{width:13px;height:13px;flex:0 0 13px;fill:none;stroke:#148357;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:700px){.kpi .kpi-product-footer{gap:9px;padding-top:12px}.kpi .kpi-product-link{font-size:.84rem;padding:8px 10px}}
+@media(max-width:390px){.kpi .kpi-product-footer{align-items:stretch;flex-direction:column}.kpi .kpi-product-link{align-self:flex-start}}
+</style>
+<script id="kpi-product-links-script">
+(function(){
+  var products=[
+    {match:'التقديرات السكانية',url:'https://www.stats.gov.sa/ar/statistics-tabs/-/categories/1340079?category=1340079&tab=436312'},
+    {match:'الناتج المحلي الإجمالي',url:'https://www.stats.gov.sa/ar/statistics-tabs/-/categories/120038?category=120038&tab=436312'},
+    {match:'البطالة بين السعوديين',url:'https://www.stats.gov.sa/ar/statistics-tabs/-/categories/417515?category=417515&tab=436312'},
+    {match:'معدل التضخم',url:'https://www.stats.gov.sa/ar/statistics-tabs/-/categories/121421?category=121421&tab=436312'},
+    {match:'الإنتاج الصناعي',url:'https://www.stats.gov.sa/ar/statistics-tabs/-/categories/123454?category=123454&tab=436312'},
+    {match:'عدد المنشآت النشطة',url:'https://www.stats.gov.sa/ar/statistics-tabs/-/categories/123038?category=123038&tab=436312'},
+    {match:'الصادرات غير النفطية',url:'https://www.stats.gov.sa/ar/statistics-tabs/-/categories/123481?category=123481&tab=436312'},
+    {match:'التجارة الإلكترونية',url:'https://www.stats.gov.sa/ar/statistics-tabs?category=122937&tab=436312'},
+    {match:'تملك المساكن',url:'https://www.stats.gov.sa/ar/statistics-tabs?category=127325&tab=436312'},
+    {match:'استخدام الإنترنت',url:'https://www.stats.gov.sa/ar/statistics-tabs?category=122937&tab=436312'}
+  ];
+  document.querySelectorAll('.kpis-track .kpi').forEach(function(card){
+    if(card.querySelector('.kpi-product-link'))return;
+    var text=(card.textContent||'').replace(/\s+/g,' ').trim();
+    var product=products.find(function(item){return text.indexOf(item.match)!==-1;});
+    if(!product)return;
+    var link=document.createElement('a');
+    link.className='kpi-product-link';
+    link.href=product.url;
+    link.innerHTML='<span>اكتشف المزيد</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg>';
+    card.appendChild(link);
+  });
+  function arrangeFooters(){
+    document.querySelectorAll('.kpis-track .kpi').forEach(function(card){
+      var link=card.querySelector('.kpi-product-link');
+      var dates=card.querySelector('.gastat-kpi-release-dates');
+      if(!link||!dates)return;
+      var footer=card.querySelector('.kpi-product-footer');
+      if(!footer){footer=document.createElement('div');footer.className='kpi-product-footer';card.appendChild(footer);}
+      footer.appendChild(dates);
+      footer.appendChild(link);
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(arrangeFooters,0);},{once:true});
+  else setTimeout(arrangeFooters,0);
+})();
+</script>
 </body></html>
