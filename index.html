@@ -28042,7 +28042,7 @@
           if (!product) return;
           var link = document.createElement("a");
           link.className = "kpi-product-link";
-          link.href = product.url;
+          link.href = "https://azghamdi.github.io/indicator/";
           link.innerHTML =
             '<span>اكتشف المزيد</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg>';
           card.appendChild(link);
@@ -28075,5 +28075,17 @@
         else setTimeout(arrangeFooters, 0);
       })();
     </script>
-  </body>
+<script id="requested-statistics-label-and-indicator-link-fix">
+(()=>{
+ const apply=()=>{
+  const desktop=document.querySelector('#goh-official-nav .goh__item--statistics-sections > .goh__trigger');
+  const mobile=document.querySelector('#goh-official-nav .goh__mobile-item--statistics-sections > .goh__mobile-trigger > span:first-child');
+  if(desktop){desktop.childNodes[0].nodeValue='الإحصاءات ';desktop.setAttribute('aria-label','الإحصاءات')}
+  if(mobile)mobile.textContent='الإحصاءات';
+  document.querySelectorAll('.indicators-section .kpi-product-link').forEach(link=>{link.href='https://azghamdi.github.io/indicator/';link.setAttribute('aria-label','اكتشف المزيد عن المؤشر')});
+ };
+ document.readyState==='loading'?document.addEventListener('DOMContentLoaded',()=>{apply();setTimeout(apply,350)},{once:true}):apply();
+})();
+</script>
+</body>
 </html>
