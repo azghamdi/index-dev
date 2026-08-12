@@ -16732,7 +16732,7 @@ main#main-content {
                       aria-label="الخرائط التفاعلية"
                     >
                       <a
-                        href="https://azghamdi.github.io/Interactive_map/"
+                        href="https://lamha.stats.gov.sa/"
                         target="_blank"
                         rel="noopener noreferrer"
                         >الخريطة التفاعلية (لمحة)</a
@@ -17403,7 +17403,7 @@ main#main-content {
               </summary>
               <div class="goh__region-flyout" aria-label="الخرائط التفاعلية">
                 <a
-                  href="https://azghamdi.github.io/Interactive_map/"
+                  href="https://lamha.stats.gov.sa/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >الخريطة التفاعلية (لمحة)</a
@@ -23689,7 +23689,7 @@ main#main-content {
             microdata:
               "https://www.stats.gov.sa/ar/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA",
             classifications: "https://www.stats.gov.sa/ar/classifications",
-            "interactive-maps": "https://www.stats.gov.sa/ar/statistics",
+            "interactive-maps": "https://lamha.stats.gov.sa/",
           };
           return (
             '<div class="gastat-data-tools__item">' +
@@ -32906,7 +32906,7 @@ main#main-content {
       <h3>الخرائط التفاعلية (لمحة)</h3>
       <p>استكشف بيانات مناطق المملكة بصريًا، وقارن المؤشرات بين المناطق الإدارية للوصول إلى لمحة سريعة وواضحة عن التوزيعات والاتجاهات المكانية.</p>
       <div class="interactive-regions-map-card__meta"><span>13 منطقة إدارية</span><span>مقارنة المؤشرات</span><span>عرض مكاني مبسّط</span></div>
-      <a class="interactive-regions-map-card__link" href="https://www.stats.gov.sa/ar/statistics">استعراض الخرائط <span aria-hidden="true">←</span></a>`;
+      <a class="interactive-regions-map-card__link" href="https://lamha.stats.gov.sa/">استعراض الخرائط <span aria-hidden="true">←</span></a>`;
     grid.appendChild(card);
   };
   document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', mount) : mount();
@@ -32959,7 +32959,7 @@ main#main-content {
       </span>
       <h3 data-ar="الخرائط التفاعلية (لمحة)" data-en="Interactive Maps (Overview)">الخرائط التفاعلية (لمحة)</h3>
       <p data-ar="استكشف بيانات مناطق المملكة بصريًا، وقارن المؤشرات بين المناطق الإدارية في عرض مكاني واضح ومبسّط." data-en="Explore Saudi regional data visually and compare indicators across administrative regions in a clear map view.">استكشف بيانات مناطق المملكة بصريًا، وقارن المؤشرات بين المناطق الإدارية في عرض مكاني واضح ومبسّط.</p>
-      <a class="gastat-data-tools__more" href="https://www.stats.gov.sa/ar/statistics">
+      <a class="gastat-data-tools__more" href="https://lamha.stats.gov.sa/">
         <span data-ar="استعراض الخرائط" data-en="Explore Maps">استعراض الخرائط</span>
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5"></path></svg>
       </a>`;
@@ -34357,6 +34357,46 @@ main#main-content {
     .gastat-nds-card__details > div:nth-child(2)::after {
       height: 20px;
       inset-inline-end: -4px;
+    }
+  }
+</style>
+<style id="gastat-publication-meta-no-table-final">
+  .gastat-nds-card__details {
+    row-gap: 8px !important;
+  }
+
+  .gastat-nds-card__details > div:first-child {
+    border: 0 !important;
+    padding: 8px 4px !important;
+    margin: 0 !important;
+  }
+
+  .gastat-nds-card__details > div:nth-child(2),
+  .gastat-nds-card__details > .gastat-nds-card__languages {
+    min-height: 48px !important;
+    background: #f5f8f7 !important;
+    border: 0 !important;
+    padding: 8px 10px !important;
+  }
+
+  .gastat-nds-card__details > div:nth-child(2) {
+    border-radius: 0 10px 10px 0 !important;
+  }
+
+  .gastat-nds-card__details > .gastat-nds-card__languages {
+    border-radius: 10px 0 0 10px !important;
+  }
+
+  .gastat-nds-card__details > div:nth-child(2)::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  @media (max-width: 560px) {
+    .gastat-nds-card__details > div:nth-child(2),
+    .gastat-nds-card__details > .gastat-nds-card__languages {
+      min-height: 43px !important;
+      padding: 7px 5px !important;
     }
   }
 </style>
