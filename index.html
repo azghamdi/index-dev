@@ -16299,7 +16299,208 @@ main#main-content {
     });
   }, { once: true });
 </script>
-</head>
+    <style id="goh-media-center-groups-final">
+      .goh__media-groups {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        padding: 20px 22px 22px;
+      }
+
+      .goh__media-group {
+        min-width: 0;
+      }
+
+      .goh__media-group h4,
+      .goh__mobile-group-title {
+        color: #1b8354;
+        font-weight: 700;
+      }
+
+      .goh__media-group h4 {
+        margin: 0 0 8px;
+        padding: 0 0 10px;
+        font-size: 17px;
+        border-bottom: 1px solid #dce8e2;
+      }
+
+      .goh__media-group .goh__links {
+        padding: 0;
+      }
+
+      .goh__mobile-menu--media {
+        padding-top: 6px;
+      }
+
+      .goh__mobile-group-title {
+        padding: 13px 16px 8px;
+        font-size: 15px;
+        border-bottom: 1px solid #dce8e2;
+      }
+
+      .goh__mobile-menu--media .goh__mobile-group-title:not(:first-child) {
+        margin-top: 8px;
+        border-top: 1px solid #edf2ef;
+      }
+
+      @media (max-width: 900px) {
+        .goh__media-groups {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <style id="goh-statistics-unified-menu-effect-final">
+      /* توحيد حالات قائمة البيانات والإحصاءات مع بقية القائمة العلوية */
+      @media (min-width: 1181px) {
+        #goh-official-nav .goh__item--statistics-sections:hover > .goh__trigger,
+        #goh-official-nav .goh__item--statistics-sections:focus-within > .goh__trigger,
+        #goh-official-nav .goh__item--statistics-sections > .goh__trigger[aria-expanded="true"] {
+          background: #e5e7eb !important;
+          color: #111827 !important;
+        }
+
+        #goh-official-nav .goh__item--statistics-sections:hover > .goh__trigger::after,
+        #goh-official-nav .goh__item--statistics-sections:focus-within > .goh__trigger::after,
+        #goh-official-nav .goh__item--statistics-sections > .goh__trigger[aria-expanded="true"]::after {
+          background: #111827 !important;
+        }
+
+        #goh-official-nav .goh__dropdown--statistics-sections {
+          border-top-color: #111827 !important;
+        }
+      }
+
+      #goh-official-nav .goh__statistics-section > summary:hover,
+      #goh-official-nav .goh__statistics-section > summary:focus-visible,
+      #goh-official-nav .goh__statistics-section[open] > summary,
+      #goh-official-nav .goh__stat-main-group-trigger:hover,
+      #goh-official-nav .goh__stat-main-group-trigger:focus-visible,
+      #goh-official-nav .goh__stat-main-group-trigger[aria-expanded="true"],
+      #goh-official-nav .goh__international-goals-trigger:hover,
+      #goh-official-nav .goh__international-goals-trigger:focus-visible,
+      #goh-official-nav .goh__international-goals-trigger[aria-expanded="true"],
+      #goh-official-nav .goh__stat-topic-flyout a:hover,
+      #goh-official-nav .goh__stat-topic-flyout a:focus-visible,
+      #goh-official-nav .goh__sdg-flyout a:hover,
+      #goh-official-nav .goh__sdg-flyout a:focus-visible {
+        background: #f3f4f6 !important;
+        border-color: #d1d5db !important;
+        color: #111827 !important;
+        box-shadow: none !important;
+        outline: none !important;
+      }
+
+      #goh-official-nav .goh__statistics-section > summary::before,
+      #goh-official-nav .goh__stat-main-group-trigger::before,
+      #goh-official-nav .goh__international-goals-trigger::before {
+        background: #9ca3af !important;
+      }
+
+      #goh-official-nav .goh__statistics-section > summary:hover::before,
+      #goh-official-nav .goh__statistics-section[open] > summary::before,
+      #goh-official-nav .goh__stat-main-group-trigger:hover::before,
+      #goh-official-nav .goh__stat-main-group-trigger[aria-expanded="true"]::before,
+      #goh-official-nav .goh__international-goals-trigger:hover::before,
+      #goh-official-nav .goh__international-goals-trigger[aria-expanded="true"]::before {
+        background: #4b5563 !important;
+      }
+
+      @media (max-width: 1180px) {
+        #goh-official-nav .goh__mobile-item--statistics-sections.is-open > .goh__mobile-trigger,
+        #goh-official-nav .goh__mobile-item--statistics-sections > .goh__mobile-trigger:hover,
+        #goh-official-nav .goh__mobile-item--statistics-sections > .goh__mobile-trigger:focus-visible {
+          background: #f3f4f6 !important;
+          color: #111827 !important;
+        }
+      }
+    </style>
+    <style id="goh-statistics-all-levels-gray-final">
+      /* جميع المستويات الداخلية لقائمة البيانات والإحصاءات */
+      #goh-official-nav .goh__dropdown--statistics-sections :is(button, summary, a) {
+        transition:
+          background-color 0.16s ease,
+          border-color 0.16s ease,
+          color 0.16s ease !important;
+      }
+
+      #goh-official-nav .goh__dropdown--statistics-sections :is(button, summary, a):hover,
+      #goh-official-nav .goh__dropdown--statistics-sections :is(button, summary, a):focus-visible,
+      #goh-official-nav .goh__dropdown--statistics-sections button[aria-expanded="true"],
+      #goh-official-nav .goh__dropdown--statistics-sections details[open] > summary,
+      #goh-official-nav .goh__subject-group:hover,
+      #goh-official-nav .goh__subject-group:focus-within,
+      #goh-official-nav .goh__international-goals-group:hover,
+      #goh-official-nav .goh__international-goals-group:focus-within {
+        background-color: #f3f4f6 !important;
+        color: #111827 !important;
+        border-color: #d1d5db !important;
+        box-shadow: none !important;
+        outline: none !important;
+      }
+
+      #goh-official-nav :is(
+        .goh__stat-topic-flyout,
+        .goh__subject-items,
+        .goh__region-flyout,
+        .goh__international-flyout,
+        .goh__sdg-flyout
+      ) {
+        border-color: #d1d5db !important;
+        border-top-color: #111827 !important;
+      }
+
+      #goh-official-nav :is(
+        .goh__statistics-section,
+        .goh__stat-main-group,
+        .goh__subject-group,
+        .goh__international-goals-group
+      ) :is(button, summary)[aria-expanded="true"]::before,
+      #goh-official-nav .goh__statistics-section[open] > summary::before,
+      #goh-official-nav .goh__dropdown--statistics-sections :is(button, summary):hover::before {
+        background-color: #4b5563 !important;
+      }
+
+      #goh-official-nav .goh__dropdown--statistics-sections :is(button, summary, a):hover :is(svg, path),
+      #goh-official-nav .goh__dropdown--statistics-sections :is(button, summary, a):focus-visible :is(svg, path),
+      #goh-official-nav .goh__dropdown--statistics-sections button[aria-expanded="true"] :is(svg, path) {
+        color: #111827 !important;
+        stroke: currentColor !important;
+      }
+
+      @media (max-width: 1180px) {
+        #goh-official-nav .goh__mobile-menu--statistics-sections :is(button, summary, a):hover,
+        #goh-official-nav .goh__mobile-menu--statistics-sections :is(button, summary, a):focus-visible,
+        #goh-official-nav .goh__mobile-menu--statistics-sections button[aria-expanded="true"],
+        #goh-official-nav .goh__mobile-menu--statistics-sections details[open] > summary {
+          background-color: #f3f4f6 !important;
+          color: #111827 !important;
+          border-color: #d1d5db !important;
+          box-shadow: none !important;
+        }
+      }
+    </style>
+    <style id="goh-authority-two-columns-final">
+      #goh-official-nav .goh__authority-columns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 20px;
+        padding: 10px 12px 14px;
+      }
+
+      #goh-official-nav .goh__authority-columns > .goh__links {
+        padding: 0 !important;
+        min-width: 0;
+      }
+
+      @media (max-width: 1180px) {
+        #goh-official-nav .goh__authority-columns {
+          grid-template-columns: 1fr;
+          gap: 0;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
   <body class="dga-platform-page">
     <a class="dga-skip-link" href="#main-content">تجاوز إلى المحتوى الرئيسي</a>
     <header
@@ -16374,39 +16575,38 @@ main#main-content {
                 الهيئة<span>⌄</span>
               </button>
               <div class="goh__dropdown">
-                <h3 class="goh__drop-title">الهيئة</h3>
-                <div class="goh__links goh__links--compact">
-                  <a href="https://www.stats.gov.sa/ar/gastat-about-us"
-                    >من نحن</a
-                  ><a href="https://www.stats.gov.sa/ar/board-of-directors"
-                    >مجلس الإدارة</a
-                  ><a href="https://www.stats.gov.sa/ar/organization-chart"
-                    >الهيكل التنظيمي</a
-                  ><a href="https://www.stats.gov.sa/ar/policies-and-strategies"
-                    >السياسات والإستراتيجيات</a
-                  ><a href="https://www.stats.gov.sa/ar/tenders-and-procurement"
-                    >المنافسات والمشتريات</a
-                  ><a href="https://www.stats.gov.sa/ar/budget-and-expenses"
-                    >الميزانية والمصروفات</a
-                  ><a href="https://www.stats.gov.sa/ar/annual-report"
-                    >التقرير السنوي</a
-                  ><a href="https://www.stats.gov.sa/ar/innovation"
-                    >الابتكار الإحصائي</a
-                  ><a href="https://www.stats.gov.sa/ar/laws-and-regulations"
-                    >الأنظمة واللوائح</a
-                  ><a
-                    href="https://www.stats.gov.sa/ar/the-second-saudi-statistics-forum"
-                    >المنتدى السعودي الثاني للإحصاء</a
-                  >
+                <div class="goh__authority-columns">
+                  <div class="goh__links goh__links--compact">
+                    <a href="https://www.stats.gov.sa/ar/gastat-about-us">من نحن</a
+                    ><a href="https://www.stats.gov.sa/ar/board-of-directors"
+                      >مجلس الإدارة</a
+                    ><a href="https://www.stats.gov.sa/ar/organization-chart"
+                      >الهيكل التنظيمي</a
+                    ><a href="https://www.stats.gov.sa/ar/policies-and-strategies"
+                      >السياسات والإستراتيجيات</a
+                    ><a href="https://www.stats.gov.sa/ar/tenders-and-procurement"
+                      >المنافسات والمشتريات</a>
+                  </div>
+                  <div class="goh__links goh__links--compact">
+                    <a href="https://www.stats.gov.sa/ar/budget-and-expenses"
+                      >الميزانية والمصروفات</a
+                    ><a href="https://www.stats.gov.sa/ar/annual-report"
+                      >التقرير السنوي</a
+                    ><a href="https://www.stats.gov.sa/ar/innovation"
+                      >الابتكار الإحصائي</a
+                    ><a href="https://www.stats.gov.sa/ar/laws-and-regulations"
+                      >الأنظمة واللوائح</a
+                    ><a href="https://www.stats.gov.sa/ar/the-second-saudi-statistics-forum"
+                      >المنتدى السعودي الثاني للإحصاء</a>
+                  </div>
                 </div>
               </div>
             </li>
             <li class="goh__item goh__item--statistics-sections">
               <button class="goh__trigger" type="button" aria-expanded="false">
-                الإحصاءات <span aria-hidden="true">⌄</span>
+                البيانات والإحصاءات <span aria-hidden="true">⌄</span>
               </button>
               <div class="goh__dropdown goh__dropdown--statistics-sections">
-                <h3 class="goh__drop-title">الإحصاءات</h3>
                 <div class="goh__statistics-sections-list" role="list">
                   <details
                     class="goh__statistics-section goh__statistics-section--field"
@@ -16834,7 +17034,6 @@ main#main-content {
                 الخدمات<span>⌄</span>
               </button>
               <div class="goh__dropdown">
-                <h3 class="goh__drop-title">الخدمات</h3>
                 <div class="goh__links goh__links--compact">
                   <a
                     href="https://www.stats.gov.sa/ar/statistical-information-request"
@@ -16849,10 +17048,9 @@ main#main-content {
             </li>
             <li class="goh__item">
               <button class="goh__trigger" type="button" aria-expanded="false">
-                التوعية<span>⌄</span>
+                المسوح الإحصائية<span>⌄</span>
               </button>
               <div class="goh__dropdown">
-                <h3 class="goh__drop-title">التوعية</h3>
                 <div class="goh__links goh__links--compact">
                   <a href="https://www.stats.gov.sa/ar/survey-awareness"
                     >توعية المسوح</a
@@ -16871,10 +17069,9 @@ main#main-content {
             </li>
             <li class="goh__item">
               <button class="goh__trigger" type="button" aria-expanded="false">
-                المرجعيات والتصانيف<span>⌄</span>
+                المرجعيات<span>⌄</span>
               </button>
               <div class="goh__dropdown">
-                <h3 class="goh__drop-title">المرجعيات والتصانيف</h3>
                 <div class="goh__links goh__links--compact">
                   <a href="https://www.stats.gov.sa/ar/statistical-guides"
                     >الأدلة الإحصائية</a
@@ -16888,27 +17085,31 @@ main#main-content {
             </li>
             <li class="goh__item">
               <button class="goh__trigger" type="button" aria-expanded="false">
-                المركز الإعلامي والفعاليات<span>⌄</span>
+                المركز الإعلامي<span>⌄</span>
               </button>
               <div class="goh__dropdown">
-                <h3 class="goh__drop-title">المركز الإعلامي والفعاليات</h3>
-                <div class="goh__links goh__links--compact">
-                  <a href="https://www.stats.gov.sa/ar/un-world-data-forum-2026"
-                    >منتدى الأمم المتحدة العالمي السادس للبيانات 2026</a
-                  ><a
-                    href="https://www.stats.gov.sa/ar/data-innovation-hackathon"
-                    >هكاثون الابتكار في البيانات</a
-                  ><a href="https://www.stats.gov.sa/ar/news">الأخبار</a
-                  ><a href="https://www.stats.gov.sa/ar/media-center">الوسائط</a
-                  ><a href="https://www.stats.gov.sa/ar/transfers-platform"
-                    >منصة المنقولات</a
-                  ><a href="https://www.stats.gov.sa/ar/identity">هوية الهيئة</a
-                  ><a
-                    href="https://www.stats.gov.sa/ar/activities-and-achievements"
-                    >النشاطات والإنجازات</a
-                  ><a href="https://www.stats.gov.sa/ar/editorial-policy"
-                    >السياسة التحريرية ودليل كتابة الأعداد</a
-                  >
+                <div class="goh__media-groups">
+                  <section class="goh__media-group" aria-labelledby="media-reading-title">
+                    <h4 id="media-reading-title">الإعلام</h4>
+                    <div class="goh__links goh__links--compact">
+                      <a href="https://www.stats.gov.sa/ar/news">الأخبار</a
+                      ><a href="https://www.stats.gov.sa/ar/media-center">الوسائط</a
+                      ><a href="https://www.stats.gov.sa/ar/transfers-platform"
+                        >منصة المنقولات</a
+                      ><a href="https://www.stats.gov.sa/ar/identity">هوية الهيئة</a>
+                    </div>
+                  </section>
+                  <section class="goh__media-group" aria-labelledby="media-events-title">
+                    <h4 id="media-events-title">الفعاليات</h4>
+                    <div class="goh__links goh__links--compact">
+                      <a href="https://www.stats.gov.sa/ar/un-world-data-forum-2026"
+                        >منتدى الأمم المتحدة العالمي السادس للبيانات 2026</a
+                      ><a href="https://www.stats.gov.sa/ar/data-innovation-hackathon"
+                        >هكاثون الابتكار في البيانات</a
+                      ><a href="https://www.stats.gov.sa/ar/activities-and-achievements"
+                        >النشاطات والإنجازات</a>
+                    </div>
+                  </section>
                 </div>
               </div>
             </li>
@@ -16917,7 +17118,6 @@ main#main-content {
                 تواصل معنا<span>⌄</span>
               </button>
               <div class="goh__dropdown">
-                <h3 class="goh__drop-title">تواصل معنا</h3>
                 <div class="goh__links goh__links--compact">
                   <a href="https://www.stats.gov.sa/ar/contact-us">تواصل معنا</a
                   ><a href="https://www.stats.gov.sa/ar/branches">الفروع</a
@@ -17084,7 +17284,7 @@ main#main-content {
             class="goh__mobile-trigger"
             aria-expanded="false"
           >
-            <span>الإحصاءات</span><span aria-hidden="true">⌄</span>
+            <span>البيانات والإحصاءات</span><span aria-hidden="true">⌄</span>
           </button>
           <div class="goh__mobile-menu goh__mobile-menu--statistics-sections">
             <details
@@ -17515,7 +17715,7 @@ main#main-content {
             class="goh__mobile-trigger"
             aria-expanded="false"
           >
-            <span>التوعية</span><span>⌄</span>
+            <span>المسوح الإحصائية</span><span>⌄</span>
           </button>
           <div class="goh__mobile-menu">
             <a href="https://www.stats.gov.sa/ar/survey-awareness"
@@ -17536,7 +17736,7 @@ main#main-content {
             class="goh__mobile-trigger"
             aria-expanded="false"
           >
-            <span>المرجعيات والتصانيف</span><span>⌄</span>
+            <span>المرجعيات</span><span>⌄</span>
           </button>
           <div class="goh__mobile-menu">
             <a href="https://www.stats.gov.sa/ar/statistical-guides"
@@ -17552,23 +17752,21 @@ main#main-content {
             class="goh__mobile-trigger"
             aria-expanded="false"
           >
-            <span>المركز الإعلامي والفعاليات</span><span>⌄</span>
+            <span>المركز الإعلامي</span><span>⌄</span>
           </button>
-          <div class="goh__mobile-menu">
+          <div class="goh__mobile-menu goh__mobile-menu--media">
+            <div class="goh__mobile-group-title">الإعلام</div>
+            <a href="https://www.stats.gov.sa/ar/news">الأخبار</a
+            ><a href="https://www.stats.gov.sa/ar/media-center">الوسائط</a
+            ><a href="https://www.stats.gov.sa/ar/transfers-platform">منصة المنقولات</a
+            ><a href="https://www.stats.gov.sa/ar/identity">هوية الهيئة</a>
+            <div class="goh__mobile-group-title">الفعاليات</div>
             <a href="https://www.stats.gov.sa/ar/un-world-data-forum-2026"
               >منتدى الأمم المتحدة العالمي السادس للبيانات 2026</a
             ><a href="https://www.stats.gov.sa/ar/data-innovation-hackathon"
               >هكاثون الابتكار في البيانات</a
-            ><a href="https://www.stats.gov.sa/ar/news">الأخبار</a
-            ><a href="https://www.stats.gov.sa/ar/media-center">الوسائط</a
-            ><a href="https://www.stats.gov.sa/ar/transfers-platform"
-              >منصة المنقولات</a
-            ><a href="https://www.stats.gov.sa/ar/identity">هوية الهيئة</a
             ><a href="https://www.stats.gov.sa/ar/activities-and-achievements"
-              >النشاطات والإنجازات</a
-            ><a href="https://www.stats.gov.sa/ar/editorial-policy"
-              >السياسة التحريرية ودليل كتابة الأعداد</a
-            >
+              >النشاطات والإنجازات</a>
           </div>
         </div>
         <div class="goh__mobile-item">
@@ -21415,7 +21613,7 @@ main#main-content {
 
     <script id="gastat-release-add-to-calendar-script">
       (function () {
-        var releaseDates = ["20260807", "20260810", "20260814", "20260818"];
+        var releaseDates = ["20260818", "20260827", "20260910", "20260924"];
 
         function escapeCalendarText(value) {
           return String(value)
@@ -21994,8 +22192,10 @@ main#main-content {
             "المؤشرات والتقارير الدولية",
             "International Indicators and Reports",
           ],
-          ["المركز الإعلامي والفعاليات", "Media Center and Events"],
-          ["المرجعيات والتصانيف", "References and Classifications"],
+          ["المركز الإعلامي", "Media Center"],
+          ["الإعلام", "Media"],
+          ["الفعاليات", "Events"],
+          ["المرجعيات", "References"],
           ["الإحصاءات الاقتصادية", "Economic Statistics"],
           ["الإحصاءات الاجتماعية", "Social Statistics"],
           ["الحسابات القومية", "National Accounts"],
@@ -22129,7 +22329,7 @@ main#main-content {
           ["المؤشرات الدولية", "International Indicators"],
           ["التقارير الدولية", "International Reports"],
           ["الخدمات", "Services"],
-          ["التوعية", "Awareness"],
+          ["المسوح الإحصائية", "Statistical Surveys"],
           ["التصانيف", "Classifications"],
           ["الأخبار", "News"],
           ["الوسائط", "Media"],
@@ -22139,7 +22339,7 @@ main#main-content {
           ["الفروع", "Branches"],
           ["التوظيف", "Careers"],
           ["الهيئة", "GASTAT"],
-          ["الإحصاءات", "Statistics"],
+          ["البيانات والإحصاءات", "Data and Statistics"],
           ["إحصاءات", "Statistics"],
           ["الأسعار", "Prices"],
           ["الأعمال", "Business"],
@@ -25413,12 +25613,12 @@ main#main-content {
           ];
           if (!items.length) return false;
           const order = [
-            "الإحصاءات",
+            "البيانات والإحصاءات",
             "الخدمات",
-            "التوعية",
-            "المرجعيات والتصانيف",
+            "المسوح الإحصائية",
+            "المرجعيات",
             "الهيئة",
-            "المركز الإعلامي والفعاليات",
+            "المركز الإعلامي",
             "تواصل معنا",
           ];
           const title = (item) =>
@@ -29175,8 +29375,8 @@ main#main-content {
  const apply=()=>{
   const desktop=document.querySelector('#goh-official-nav .goh__item--statistics-sections > .goh__trigger');
   const mobile=document.querySelector('#goh-official-nav .goh__mobile-item--statistics-sections > .goh__mobile-trigger > span:first-child');
-  if(desktop){desktop.childNodes[0].nodeValue='الإحصاءات ';desktop.setAttribute('aria-label','الإحصاءات')}
-  if(mobile)mobile.textContent='الإحصاءات';
+   if(desktop){desktop.childNodes[0].nodeValue='البيانات والإحصاءات ';desktop.setAttribute('aria-label','البيانات والإحصاءات')}
+   if(mobile)mobile.textContent='البيانات والإحصاءات';
   document.querySelectorAll('.indicators-section .kpi-product-link').forEach(link=>{link.href='https://azghamdi.github.io/indicator/';link.setAttribute('aria-label','اكتشف المزيد عن المؤشر')});
  };
  document.readyState==='loading'?document.addEventListener('DOMContentLoaded',()=>{apply();setTimeout(apply,350)},{once:true}):apply();
@@ -34399,6 +34599,291 @@ main#main-content {
       padding: 7px 5px !important;
     }
   }
+</style>
+<style id="gastat-calendar-live-countdown-final-style">
+  #releases .gastat-calendar-release-date {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+
+  #releases .gastat-calendar-live-countdown {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 26px !important;
+    padding: 4px 9px !important;
+    border: 1px solid #cfe4d8 !important;
+    border-radius: 999px !important;
+    background: #eef8f2 !important;
+    color: #146c43 !important;
+    font-size: 12px !important;
+    font-weight: 750 !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+  }
+
+  @media (max-width: 650px) {
+    #releases .gastat-calendar-release-date {
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      width: 100% !important;
+    }
+  }
+</style>
+<script id="gastat-calendar-live-countdown-final-script">
+(() => {
+  const schedules = [
+    { iso: '2026-08-18', ar: '18 أغسطس 2026' },
+    { iso: '2026-08-27', ar: '27 أغسطس 2026' },
+    { iso: '2026-09-10', ar: '10 سبتمبر 2026' },
+    { iso: '2026-09-24', ar: '24 سبتمبر 2026' }
+  ];
+
+  const remainingLabel = (iso) => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const target = new Date(iso + 'T00:00:00');
+    const days = Math.ceil((target - today) / 86400000);
+    if (days < 0) return 'تم النشر';
+    if (days === 0) return 'يُنشر اليوم';
+    if (days === 1) return 'متبقي يوم واحد';
+    if (days === 2) return 'متبقي يومان';
+    if (days >= 3 && days <= 10) return 'متبقي ' + days + ' أيام';
+    return 'متبقي ' + days + ' يومًا';
+  };
+
+  const render = () => {
+    const items = [...document.querySelectorAll('#releases .gastat-calendar-static-list .release')];
+    if (!items.length) return false;
+
+    items.slice(0, schedules.length).forEach((item, index) => {
+      const schedule = schedules[index];
+      let date = item.querySelector('.gastat-calendar-release-date');
+      if (!date) return;
+      const signature = schedule.iso + ':' + remainingLabel(schedule.iso);
+      if (item.dataset.liveCountdown === signature && date.querySelector('.gastat-calendar-live-countdown')) return;
+
+      date.textContent = schedule.ar;
+      const badge = document.createElement('span');
+      badge.className = 'gastat-calendar-live-countdown';
+      badge.textContent = remainingLabel(schedule.iso);
+      badge.setAttribute('aria-label', badge.textContent);
+      date.appendChild(badge);
+      item.dataset.liveCountdown = signature;
+    });
+    return true;
+  };
+
+  const start = () => {
+    render();
+    const releases = document.getElementById('releases');
+    if (releases) {
+      new MutationObserver(render).observe(releases, { childList: true, subtree: true });
+    }
+    document.addEventListener('click', (event) => {
+      const label = (event.target.closest('button, a, [role="tab"]')?.textContent || '').replace(/\s+/g, ' ').trim();
+      if (label.includes('إصدارات التقويم الإحصائي')) setTimeout(render, 80);
+    });
+  };
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true });
+  else start();
+})();
+</script>
+
+<style id="goh-statistics-menu-compact-final">
+@media (min-width:1181px){
+  #goh-official-nav .goh__dropdown--statistics-sections{
+    width:min(330px,calc(100vw - 32px)) !important;
+    padding:10px !important;
+    border-top-width:4px !important;
+  }
+  #goh-official-nav .goh__dropdown--statistics-sections > .goh__drop-title{
+    display:none !important;
+  }
+  #goh-official-nav .goh__statistics-sections-list{
+    gap:2px !important;
+  }
+  #goh-official-nav .goh__statistics-section{
+    border-radius:7px !important;
+  }
+  #goh-official-nav .goh__statistics-section > summary{
+    min-height:42px !important;
+    padding:8px 34px 8px 34px !important;
+    font-size:15px !important;
+    line-height:1.45 !important;
+  }
+  #goh-official-nav .goh__statistics-section > summary:before{
+    right:12px !important;
+    width:7px !important;
+    height:7px !important;
+  }
+  #goh-official-nav .goh__statistics-section > summary > span{
+    left:12px !important;
+    font-size:17px !important;
+  }
+}
+@media (max-width:1180px){
+  #goh-official-nav .goh__mobile-menu--statistics-sections{
+    gap:2px !important;
+    padding:6px !important;
+  }
+  #goh-official-nav .goh__mobile-menu--statistics-sections > .goh__drop-title{
+    display:none !important;
+  }
+  #goh-official-nav .goh__statistics-section > summary{
+    min-height:44px !important;
+    padding-block:9px !important;
+  }
+}
+</style>
+
+<style id="goh-all-dropdowns-no-duplicate-title-final">
+@media (min-width:1181px){
+  #goh-official-nav .goh__dropdown{
+    padding-top:10px !important;
+  }
+  #goh-official-nav .goh__dropdown > :first-child{
+    margin-top:0 !important;
+  }
+  #goh-official-nav .goh__dropdown .goh__links,
+  #goh-official-nav .goh__dropdown .goh__statistics-sections-list{
+    margin-top:0 !important;
+  }
+}
+</style>
+
+<style id="goh-chevron-state-sync-final">
+@media (min-width:1181px){
+  #goh-official-nav .goh__desktop .goh__trigger > span[aria-hidden="true"]{
+    position:relative !important;
+    display:inline-flex !important;
+    width:16px !important;
+    height:16px !important;
+    flex:0 0 16px !important;
+    color:transparent !important;
+    font-size:0 !important;
+    transform:none !important;
+  }
+  #goh-official-nav .goh__desktop .goh__trigger > span[aria-hidden="true"]::before{
+    content:"" !important;
+    position:absolute !important;
+    inset:3px 4px 5px 4px !important;
+    width:7px !important;
+    height:7px !important;
+    border-right:2px solid #161f2d !important;
+    border-bottom:2px solid #161f2d !important;
+    transform:rotate(45deg) !important;
+    transform-origin:center !important;
+    transition:transform .18s ease !important;
+  }
+  #goh-official-nav .goh__desktop .goh__trigger[aria-expanded="true"] > span[aria-hidden="true"]::before,
+  #goh-official-nav .goh__desktop .goh__item.is-open > .goh__trigger > span[aria-hidden="true"]::before{
+    transform:translateY(3px) rotate(225deg) !important;
+  }
+}
+#goh-official-nav .goh__mobile-trigger > span[aria-hidden="true"]{
+  transition:transform .18s ease !important;
+}
+#goh-official-nav .goh__mobile-trigger[aria-expanded="true"] > span[aria-hidden="true"],
+#goh-official-nav .goh__mobile-item.is-open > .goh__mobile-trigger > span[aria-hidden="true"]{
+  transform:rotate(180deg) !important;
+}
+</style>
+
+<style id="goh-all-menu-chevrons-state-final">
+@media (min-width:1181px){
+  #goh-official-nav .goh__desktop .goh__trigger > span:not(.nds-nav-label){
+    position:relative !important;
+    inset:auto !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:16px !important;
+    height:16px !important;
+    margin:0 !important;
+    padding:0 !important;
+    flex:0 0 16px !important;
+    color:transparent !important;
+    font-size:0 !important;
+    line-height:0 !important;
+    transform:none !important;
+  }
+  #goh-official-nav .goh__desktop .goh__trigger > span:not(.nds-nav-label)::before{
+    content:"" !important;
+    position:static !important;
+    display:block !important;
+    width:7px !important;
+    height:7px !important;
+    margin-top:-4px !important;
+    border:0 !important;
+    border-right:2px solid #161f2d !important;
+    border-bottom:2px solid #161f2d !important;
+    transform:rotate(45deg) !important;
+    transform-origin:center !important;
+    transition:transform .18s ease, margin .18s ease !important;
+  }
+  #goh-official-nav .goh__desktop .goh__item.is-open > .goh__trigger > span:not(.nds-nav-label)::before,
+  #goh-official-nav .goh__desktop .goh__trigger[aria-expanded="true"] > span:not(.nds-nav-label)::before{
+    margin-top:4px !important;
+    transform:rotate(225deg) !important;
+  }
+}
+#goh-official-nav .goh__mobile-trigger > span:last-child{
+  display:inline-flex !important;
+  transition:transform .18s ease !important;
+  transform:rotate(0deg) !important;
+}
+#goh-official-nav .goh__mobile-item.is-open > .goh__mobile-trigger > span:last-child,
+#goh-official-nav .goh__mobile-trigger[aria-expanded="true"] > span:last-child{
+  transform:rotate(180deg) !important;
+}
+</style>
+
+<style id="goh-search-action-spacing-final">
+@media (min-width:1181px){
+  #goh-official-nav .goh__main{
+    gap:14px !important;
+  }
+  #goh-official-nav .goh__desktop{
+    flex:1 1 auto !important;
+  }
+  #goh-official-nav .goh__nav{
+    width:100% !important;
+    justify-content:flex-start !important;
+    gap:0 !important;
+  }
+  #goh-official-nav .goh__actions{
+    position:relative !important;
+    z-index:3 !important;
+    margin-inline-start:18px !important;
+    padding-inline-start:14px !important;
+    gap:8px !important;
+    flex:0 0 auto !important;
+    background:#fff !important;
+  }
+  #goh-official-nav .goh__actions::before{
+    content:"" !important;
+    position:absolute !important;
+    inset-block:10px !important;
+    inset-inline-start:0 !important;
+    width:1px !important;
+    background:#e5e7eb !important;
+  }
+  #goh-official-nav .goh__search-toggle{
+    width:44px !important;
+    min-width:44px !important;
+    height:44px !important;
+    margin:0 !important;
+    border-radius:8px !important;
+  }
+  #goh-official-nav .goh__item:last-child > .goh__trigger{
+    padding-inline-end:14px !important;
+  }
+}
 </style>
 </body>
 </html>
