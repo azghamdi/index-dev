@@ -16479,6 +16479,96 @@ main#main-content {
         }
       }
     </style>
+    <style id="goh-statistical-field-flat-list">
+      /* عرض جميع أقسام المجال الإحصائي مباشرة دون مستوى تصنيف وسيط */
+      #goh-official-nav
+        .goh__statistics-section--field
+        > .goh__statistics-subsections {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(8, minmax(42px, auto));
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(0, 1fr);
+        align-items: stretch;
+        gap: 3px 16px;
+        width: min(960px, calc(100vw - 64px)) !important;
+        max-height: none !important;
+        overflow: visible !important;
+        padding: 12px 14px !important;
+        border-radius: 12px !important;
+      }
+
+      #goh-official-nav
+        .goh__statistics-section--field
+        > .goh__statistics-subsections
+        > .goh__stat-main-group,
+      #goh-official-nav
+        .goh__statistics-section--field
+        .goh__stat-topic-flyout {
+        display: contents !important;
+      }
+
+      #goh-official-nav
+        .goh__statistics-section--field
+        .goh__stat-main-group-trigger {
+        display: none !important;
+      }
+
+      #goh-official-nav
+        .goh__statistics-section--field
+        .goh__stat-topic-flyout {
+        position: static !important;
+        width: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+        padding: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        transform: none !important;
+      }
+
+      #goh-official-nav
+        .goh__statistics-section--field
+        .goh__stat-topic-flyout
+        > a {
+        display: flex !important;
+        align-items: center;
+        min-width: 0;
+        min-height: 44px;
+        padding: 9px 38px 9px 14px !important;
+        border-radius: 8px !important;
+      }
+
+      @media (max-width: 1180px) {
+        #goh-official-nav
+          .goh__statistics-section--field
+          > .goh__statistics-subsections {
+          grid-template-columns: 1fr;
+          grid-template-rows: none;
+          grid-auto-flow: row;
+          grid-auto-columns: auto;
+          width: auto !important;
+          max-height: none;
+          overflow: visible;
+          margin: 3px 10px 8px;
+          padding: 6px !important;
+        }
+      }
+
+      @media (min-width: 1181px) and (max-width: 1450px) {
+        #goh-official-nav
+          .goh__statistics-section--field
+          > .goh__statistics-subsections {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-rows: repeat(12, minmax(40px, auto));
+          width: min(700px, calc(100vw - 48px)) !important;
+        }
+      }
+    </style>
     <style id="goh-authority-two-columns-final">
       #goh-official-nav .goh__authority-columns {
         display: grid;
@@ -17033,8 +17123,6 @@ main#main-content {
                         target="_blank"
                         rel="noopener noreferrer"
                         >الخريطة التفاعلية (لمحة)</a
-                      ><a aria-disabled="true"
-                        >الخريطة التفاعلية (تعداد السعودية 2022)</a
                       >
                     </div>
                   </details>
@@ -17145,7 +17233,7 @@ main#main-content {
             </li>
             <li class="goh__item">
               <button class="goh__trigger" type="button" aria-expanded="false">
-                المسوح الإحصائية<span>⌄</span>
+                التوعية<span>⌄</span>
               </button>
               <div class="goh__dropdown">
                 <div class="goh__links goh__links--compact">
@@ -17154,8 +17242,6 @@ main#main-content {
                   ><a
                     href="https://www.stats.gov.sa/ar/statistical-knowledge-program"
                     >برنامج المعرفة الإحصائية</a
-                  ><a href="https://www.stats.gov.sa/ar/story-of-number"
-                    >حكاية رقم</a
                   ><a href="https://www.stats.gov.sa/ar/statistical-products"
                     >تعرف على المنتجات الإحصائية</a
                   ><a href="https://www.stats.gov.sa/ar/self-enumeration"
@@ -17704,8 +17790,6 @@ main#main-content {
                   target="_blank"
                   rel="noopener noreferrer"
                   >الخريطة التفاعلية (لمحة)</a
-                ><a aria-disabled="true"
-                  >الخريطة التفاعلية (تعداد السعودية 2022)</a
                 >
               </div>
             </details>
@@ -17812,14 +17896,13 @@ main#main-content {
             class="goh__mobile-trigger"
             aria-expanded="false"
           >
-            <span>المسوح الإحصائية</span><span>⌄</span>
+            <span>التوعية</span><span>⌄</span>
           </button>
           <div class="goh__mobile-menu">
             <a href="https://www.stats.gov.sa/ar/survey-awareness"
               >توعية المسوح</a
             ><a href="https://www.stats.gov.sa/ar/statistical-knowledge-program"
               >برنامج المعرفة الإحصائية</a
-            ><a href="https://www.stats.gov.sa/ar/story-of-number">حكاية رقم</a
             ><a href="https://www.stats.gov.sa/ar/statistical-products"
               >تعرف على المنتجات الإحصائية</a
             ><a href="https://www.stats.gov.sa/ar/self-enumeration"
@@ -22425,7 +22508,7 @@ main#main-content {
           ["المؤشرات الدولية", "International Indicators"],
           ["التقارير الدولية", "International Reports"],
           ["الخدمات", "Services"],
-          ["المسوح الإحصائية", "Statistical Surveys"],
+          ["التوعية", "Awareness"],
           ["التصانيف", "Classifications"],
           ["الأخبار", "News"],
           ["الوسائط", "Media"],
@@ -25711,7 +25794,7 @@ main#main-content {
           const order = [
             "البيانات والإحصاءات",
             "الخدمات",
-            "المسوح الإحصائية",
+            "التوعية",
             "المرجعيات",
             "الهيئة",
             "المركز الإعلامي",
